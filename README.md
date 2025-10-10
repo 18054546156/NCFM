@@ -18,20 +18,6 @@ Here's an overview of the process behind our **Neural Characteristic Function Ma
 
 
 
-
-## :mag: TODO
-<font color="red">**We are currently organizing all the code. Stay tuned!**</font>
-- [x] Distillation code
-- [x] Evaluation code
-- [x] Sampling network
-- [x] Config files
-- [x] Pretrained models
-- [x] Distilled datasets
-- [x] Project page
-
-
-
-
 ## 🛠️ Getting Started
 
 To get started with NCFM, follow the installation instructions below.
@@ -103,3 +89,4 @@ If you find NCFM useful for your research and applications, please cite using th
 
 ## Acknowledgement
 We sincerely thank the developers of the following projects for their valuable contributions and inspiration: [MTT](https://github.com/GeorgeCazenavette/mtt-distillation), [DATM](https://github.com/NUS-HPC-AI-Lab/DATM), [DC/DM](https://github.com/VICO-UoE/DatasetCondensation), [IDC](https://github.com/snu-mllab/Efficient-Dataset-Condensation), [SRe2L](https://github.com/VILA-Lab/SRe2L), [RDED](https://github.com/LINs-lab/RDED), [DANCE](https://github.com/Hansong-Zhang/DANCE). We draw inspiration from these fantastic projects!
+
