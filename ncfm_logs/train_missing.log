@@ -1,0 +1,18 @@
+Training missing models 0 and 2 for PathMNIST...
+Training model 0...
+/root/miniconda3/envs/py311/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[rank0]:[W419 07:17:40.456620104 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ./../pretrained_models/pathmnist/pathmnist
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+Training model 2...
+/root/miniconda3/envs/py311/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[rank0]:[W419 07:17:46.326027987 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ./../pretrained_models/pathmnist/pathmnist
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+All 20 models trained!

@@ -1,0 +1,24 @@
+========================================
+DermaMNIST on GPU 1 (IR=58.66, Severe Imbalance)
+Start time: $(date)
+========================================
+
+Starting: ${exp_name}
+✓ Pretraining done
+✓ Condensation done
+✓ ${exp_name} COMPLETED
+
+Starting: ${exp_name}
+✓ Pretraining done
+✓ Condensation done
+✓ ${exp_name} COMPLETED
+
+Starting: ${exp_name}
+✓ Pretraining done
+✓ Condensation done
+✓ ${exp_name} COMPLETED
+
+========================================
+DermaMNIST ALL COMPLETED!
+End time: $(date)
+========================================

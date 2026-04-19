@@ -1,0 +1,19 @@
+========================================
+NCFM MedMNIST Strict Reproduction
+========================================
+Start time: Sun Apr 19 03:24:18 UTC 2026
+========================================
+
+=== Starting Experiment Queue ===
+
+Group 1: PathMNIST (Balanced, IR=1.63)
+
+========================================
+Starting: pathmnist_ipc10
+GPU: 1
+Time: Sun Apr 19 03:24:18 UTC 2026
+========================================
+[pathmnist_ipc10] Phase 1: Pretraining 20 models...
+[pathmnist_ipc10] ✓ Pretraining completed
+[pathmnist_ipc10] Phase 2: Condensing dataset...
+launch_all_experiments_fixed.sh: line 26: 1303436 Aborted                 (core dumped) CUDA_VISIBLE_DEVICES=${gpu} RANK=0 WORLD_SIZE=1 LOCAL_RANK=0 LOCAL_WORLD_SIZE=1 MASTER_ADDR=localhost MASTER_PORT=29500 ${CONDA_BASE}/envs/py311/bin/python condense/condense_script.py --config_path config/ipc${ipc}/${dataset}.yaml --gpu "0" --ipc ${ipc} --run_mode Condense >> ${log_file} 2>&1

@@ -1,0 +1,1423 @@
+DermaMNIST on GPU 1 starting...
+Starting dermamnist IPC=10
+/root/miniconda3/envs/py311/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[rank0]:[W419 03:45:23.568625470 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ./../pretrained_models/dermamnist/dermamnist
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+Training model 1/20
+Model 0 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel0_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+/root/miniconda3/envs/py311/lib/python3.11/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4317.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+<Pretraining  0-th model>...[Epoch  0] Train acc: 65.6 (loss: 1.133), Val acc: 66.9, Time: 1.51 seconds
+<Pretraining  0-th model>...[Epoch  1] Train acc: 67.1 (loss: 1.041), Val acc: 61.8, Time: 0.79 seconds
+<Pretraining  0-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.016), Val acc: 68.2, Time: 0.67 seconds
+<Pretraining  0-th model>...[Epoch  3] Train acc: 67.5 (loss: 0.994), Val acc: 69.7, Time: 0.89 seconds
+<Pretraining  0-th model>...[Epoch  4] Train acc: 67.3 (loss: 0.988), Val acc: 69.0, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.964), Val acc: 69.9, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch  6] Train acc: 67.6 (loss: 0.945), Val acc: 70.0, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch  7] Train acc: 68.3 (loss: 0.949), Val acc: 70.7, Time: 0.88 seconds
+<Pretraining  0-th model>...[Epoch  8] Train acc: 67.6 (loss: 0.957), Val acc: 69.6, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch  9] Train acc: 68.6 (loss: 0.923), Val acc: 70.2, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 10] Train acc: 69.2 (loss: 0.916), Val acc: 72.1, Time: 0.67 seconds
+<Pretraining  0-th model>...[Epoch 11] Train acc: 68.4 (loss: 0.936), Val acc: 71.7, Time: 0.79 seconds
+<Pretraining  0-th model>...[Epoch 12] Train acc: 68.6 (loss: 0.932), Val acc: 72.7, Time: 0.88 seconds
+<Pretraining  0-th model>...[Epoch 13] Train acc: 69.1 (loss: 0.909), Val acc: 71.3, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 14] Train acc: 68.9 (loss: 0.918), Val acc: 72.8, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 15] Train acc: 68.9 (loss: 0.901), Val acc: 71.9, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 16] Train acc: 69.0 (loss: 0.927), Val acc: 72.3, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 17] Train acc: 68.7 (loss: 0.903), Val acc: 72.3, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 18] Train acc: 69.4 (loss: 0.872), Val acc: 71.7, Time: 0.84 seconds
+<Pretraining  0-th model>...[Epoch 19] Train acc: 69.8 (loss: 0.882), Val acc: 72.2, Time: 0.64 seconds
+<Pretraining  0-th model>...[Epoch 20] Train acc: 69.6 (loss: 0.898), Val acc: 72.7, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 21] Train acc: 69.1 (loss: 0.894), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 22] Train acc: 70.1 (loss: 0.875), Val acc: 72.2, Time: 0.91 seconds
+<Pretraining  0-th model>...[Epoch 23] Train acc: 70.0 (loss: 0.877), Val acc: 72.7, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 24] Train acc: 69.7 (loss: 0.873), Val acc: 72.7, Time: 0.89 seconds
+<Pretraining  0-th model>...[Epoch 25] Train acc: 70.6 (loss: 0.862), Val acc: 72.7, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 26] Train acc: 70.1 (loss: 0.875), Val acc: 71.9, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 27] Train acc: 70.0 (loss: 0.861), Val acc: 72.8, Time: 0.82 seconds
+<Pretraining  0-th model>...[Epoch 28] Train acc: 70.0 (loss: 0.878), Val acc: 71.8, Time: 0.67 seconds
+<Pretraining  0-th model>...[Epoch 29] Train acc: 70.0 (loss: 0.874), Val acc: 72.6, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 30] Train acc: 70.2 (loss: 0.863), Val acc: 74.7, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 31] Train acc: 71.5 (loss: 0.831), Val acc: 73.1, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 32] Train acc: 70.9 (loss: 0.852), Val acc: 72.8, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 33] Train acc: 70.8 (loss: 0.847), Val acc: 73.2, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 34] Train acc: 70.2 (loss: 0.861), Val acc: 72.0, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 35] Train acc: 71.2 (loss: 0.826), Val acc: 74.0, Time: 0.89 seconds
+<Pretraining  0-th model>...[Epoch 36] Train acc: 70.0 (loss: 0.894), Val acc: 74.7, Time: 0.74 seconds
+<Pretraining  0-th model>...[Epoch 37] Train acc: 71.0 (loss: 0.837), Val acc: 73.7, Time: 0.71 seconds
+<Pretraining  0-th model>...[Epoch 38] Train acc: 71.2 (loss: 0.834), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 39] Train acc: 71.7 (loss: 0.841), Val acc: 73.4, Time: 0.90 seconds
+<Pretraining  0-th model>...[Epoch 40] Train acc: 71.5 (loss: 0.824), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 41] Train acc: 72.3 (loss: 0.805), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 42] Train acc: 71.9 (loss: 0.820), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining  0-th model>...[Epoch 43] Train acc: 72.6 (loss: 0.786), Val acc: 74.5, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 44] Train acc: 72.3 (loss: 0.801), Val acc: 73.6, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 45] Train acc: 72.6 (loss: 0.800), Val acc: 74.2, Time: 0.63 seconds
+<Pretraining  0-th model>...[Epoch 46] Train acc: 71.8 (loss: 0.831), Val acc: 73.5, Time: 0.88 seconds
+<Pretraining  0-th model>...[Epoch 47] Train acc: 72.2 (loss: 0.800), Val acc: 74.8, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 48] Train acc: 73.4 (loss: 0.754), Val acc: 74.3, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 49] Train acc: 72.9 (loss: 0.793), Val acc: 74.6, Time: 0.89 seconds
+<Pretraining  0-th model>...[Epoch 50] Train acc: 72.6 (loss: 0.790), Val acc: 74.2, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 51] Train acc: 72.8 (loss: 0.781), Val acc: 74.6, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 52] Train acc: 73.1 (loss: 0.781), Val acc: 74.1, Time: 0.85 seconds
+<Pretraining  0-th model>...[Epoch 53] Train acc: 72.6 (loss: 0.786), Val acc: 73.9, Time: 0.83 seconds
+<Pretraining  0-th model>...[Epoch 54] Train acc: 72.9 (loss: 0.794), Val acc: 73.9, Time: 0.66 seconds
+<Pretraining  0-th model>...[Epoch 55] Train acc: 73.9 (loss: 0.762), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining  0-th model>...[Epoch 56] Train acc: 72.9 (loss: 0.780), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 57] Train acc: 72.8 (loss: 0.798), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining  0-th model>...[Epoch 58] Train acc: 73.4 (loss: 0.782), Val acc: 74.3, Time: 0.89 seconds
+<Pretraining  0-th model>...[Epoch 59] Train acc: 73.0 (loss: 0.781), Val acc: 74.0, Time: 0.87 seconds
+Model 0 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel0_trained.pth.tar
+Training model 2/20
+Model 1 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel1_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  1-th model>...[Epoch  0] Train acc: 65.8 (loss: 1.133), Val acc: 66.9, Time: 0.89 seconds
+<Pretraining  1-th model>...[Epoch  1] Train acc: 66.9 (loss: 1.052), Val acc: 65.9, Time: 0.89 seconds
+<Pretraining  1-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.013), Val acc: 69.0, Time: 0.73 seconds
+<Pretraining  1-th model>...[Epoch  3] Train acc: 67.3 (loss: 1.002), Val acc: 70.6, Time: 0.71 seconds
+<Pretraining  1-th model>...[Epoch  4] Train acc: 66.9 (loss: 0.988), Val acc: 71.0, Time: 0.91 seconds
+<Pretraining  1-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.972), Val acc: 70.8, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch  6] Train acc: 67.4 (loss: 0.969), Val acc: 69.7, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch  7] Train acc: 68.4 (loss: 0.947), Val acc: 70.4, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch  8] Train acc: 68.5 (loss: 0.937), Val acc: 71.2, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch  9] Train acc: 68.1 (loss: 0.929), Val acc: 70.8, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 10] Train acc: 68.2 (loss: 0.932), Val acc: 73.1, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 11] Train acc: 68.8 (loss: 0.901), Val acc: 72.8, Time: 0.62 seconds
+<Pretraining  1-th model>...[Epoch 12] Train acc: 68.8 (loss: 0.912), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 13] Train acc: 68.4 (loss: 0.936), Val acc: 73.1, Time: 0.89 seconds
+<Pretraining  1-th model>...[Epoch 14] Train acc: 69.5 (loss: 0.898), Val acc: 70.0, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 15] Train acc: 69.3 (loss: 0.872), Val acc: 71.7, Time: 0.85 seconds
+<Pretraining  1-th model>...[Epoch 16] Train acc: 69.5 (loss: 0.890), Val acc: 72.5, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 17] Train acc: 69.3 (loss: 0.896), Val acc: 72.9, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 18] Train acc: 69.0 (loss: 0.900), Val acc: 72.1, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 19] Train acc: 69.7 (loss: 0.891), Val acc: 73.1, Time: 0.81 seconds
+<Pretraining  1-th model>...[Epoch 20] Train acc: 69.8 (loss: 0.871), Val acc: 71.3, Time: 0.66 seconds
+<Pretraining  1-th model>...[Epoch 21] Train acc: 69.6 (loss: 0.895), Val acc: 73.2, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 22] Train acc: 70.0 (loss: 0.871), Val acc: 70.0, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 23] Train acc: 69.6 (loss: 0.898), Val acc: 72.7, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 24] Train acc: 69.7 (loss: 0.889), Val acc: 72.3, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 25] Train acc: 70.3 (loss: 0.875), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 26] Train acc: 70.3 (loss: 0.860), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 27] Train acc: 69.5 (loss: 0.883), Val acc: 73.9, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 28] Train acc: 71.2 (loss: 0.838), Val acc: 72.3, Time: 0.75 seconds
+<Pretraining  1-th model>...[Epoch 29] Train acc: 70.9 (loss: 0.849), Val acc: 73.4, Time: 0.71 seconds
+<Pretraining  1-th model>...[Epoch 30] Train acc: 70.3 (loss: 0.866), Val acc: 73.9, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 31] Train acc: 70.8 (loss: 0.862), Val acc: 73.1, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 32] Train acc: 70.8 (loss: 0.852), Val acc: 73.5, Time: 0.85 seconds
+<Pretraining  1-th model>...[Epoch 33] Train acc: 70.9 (loss: 0.843), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 34] Train acc: 71.6 (loss: 0.827), Val acc: 73.2, Time: 0.85 seconds
+<Pretraining  1-th model>...[Epoch 35] Train acc: 71.5 (loss: 0.835), Val acc: 73.8, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 36] Train acc: 70.0 (loss: 0.865), Val acc: 73.5, Time: 0.89 seconds
+<Pretraining  1-th model>...[Epoch 37] Train acc: 71.2 (loss: 0.835), Val acc: 72.8, Time: 0.64 seconds
+<Pretraining  1-th model>...[Epoch 38] Train acc: 71.3 (loss: 0.841), Val acc: 74.1, Time: 0.85 seconds
+<Pretraining  1-th model>...[Epoch 39] Train acc: 70.9 (loss: 0.853), Val acc: 72.9, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 40] Train acc: 71.6 (loss: 0.826), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 41] Train acc: 71.7 (loss: 0.824), Val acc: 75.0, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 42] Train acc: 72.6 (loss: 0.799), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 43] Train acc: 72.4 (loss: 0.793), Val acc: 73.9, Time: 0.85 seconds
+<Pretraining  1-th model>...[Epoch 44] Train acc: 72.4 (loss: 0.808), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 45] Train acc: 72.6 (loss: 0.789), Val acc: 74.5, Time: 0.84 seconds
+<Pretraining  1-th model>...[Epoch 46] Train acc: 73.6 (loss: 0.779), Val acc: 74.3, Time: 0.65 seconds
+<Pretraining  1-th model>...[Epoch 47] Train acc: 72.2 (loss: 0.809), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 48] Train acc: 72.7 (loss: 0.789), Val acc: 74.9, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 49] Train acc: 71.4 (loss: 0.815), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  1-th model>...[Epoch 50] Train acc: 72.3 (loss: 0.808), Val acc: 74.4, Time: 0.89 seconds
+<Pretraining  1-th model>...[Epoch 51] Train acc: 71.9 (loss: 0.820), Val acc: 74.5, Time: 0.89 seconds
+<Pretraining  1-th model>...[Epoch 52] Train acc: 72.5 (loss: 0.788), Val acc: 74.5, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 53] Train acc: 73.1 (loss: 0.796), Val acc: 74.6, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 54] Train acc: 73.3 (loss: 0.787), Val acc: 75.0, Time: 0.80 seconds
+<Pretraining  1-th model>...[Epoch 55] Train acc: 73.2 (loss: 0.778), Val acc: 74.3, Time: 0.69 seconds
+<Pretraining  1-th model>...[Epoch 56] Train acc: 73.2 (loss: 0.777), Val acc: 74.4, Time: 0.86 seconds
+<Pretraining  1-th model>...[Epoch 57] Train acc: 72.5 (loss: 0.821), Val acc: 74.5, Time: 0.88 seconds
+<Pretraining  1-th model>...[Epoch 58] Train acc: 72.2 (loss: 0.829), Val acc: 74.6, Time: 0.90 seconds
+<Pretraining  1-th model>...[Epoch 59] Train acc: 71.5 (loss: 0.828), Val acc: 74.6, Time: 0.88 seconds
+Model 1 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel1_trained.pth.tar
+Training model 3/20
+Model 2 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel2_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  2-th model>...[Epoch  0] Train acc: 66.2 (loss: 1.123), Val acc: 66.9, Time: 0.91 seconds
+<Pretraining  2-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.056), Val acc: 66.9, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.003), Val acc: 67.9, Time: 0.89 seconds
+<Pretraining  2-th model>...[Epoch  3] Train acc: 67.1 (loss: 0.997), Val acc: 70.1, Time: 0.62 seconds
+<Pretraining  2-th model>...[Epoch  4] Train acc: 67.4 (loss: 0.995), Val acc: 69.1, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch  5] Train acc: 67.6 (loss: 0.963), Val acc: 70.1, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch  6] Train acc: 67.2 (loss: 0.965), Val acc: 69.9, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch  7] Train acc: 67.7 (loss: 0.952), Val acc: 69.6, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch  8] Train acc: 68.0 (loss: 0.944), Val acc: 70.1, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch  9] Train acc: 68.6 (loss: 0.925), Val acc: 69.5, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 10] Train acc: 68.3 (loss: 0.937), Val acc: 71.6, Time: 0.89 seconds
+<Pretraining  2-th model>...[Epoch 11] Train acc: 68.5 (loss: 0.913), Val acc: 71.8, Time: 0.83 seconds
+<Pretraining  2-th model>...[Epoch 12] Train acc: 68.8 (loss: 0.929), Val acc: 72.9, Time: 0.67 seconds
+<Pretraining  2-th model>...[Epoch 13] Train acc: 68.6 (loss: 0.927), Val acc: 72.5, Time: 0.89 seconds
+<Pretraining  2-th model>...[Epoch 14] Train acc: 69.2 (loss: 0.888), Val acc: 72.0, Time: 0.85 seconds
+<Pretraining  2-th model>...[Epoch 15] Train acc: 69.0 (loss: 0.900), Val acc: 71.8, Time: 0.85 seconds
+<Pretraining  2-th model>...[Epoch 16] Train acc: 68.8 (loss: 0.890), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 17] Train acc: 69.1 (loss: 0.925), Val acc: 73.4, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 18] Train acc: 69.2 (loss: 0.902), Val acc: 72.8, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 19] Train acc: 69.6 (loss: 0.884), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 20] Train acc: 69.6 (loss: 0.880), Val acc: 73.4, Time: 0.78 seconds
+<Pretraining  2-th model>...[Epoch 21] Train acc: 69.3 (loss: 0.903), Val acc: 72.1, Time: 0.72 seconds
+<Pretraining  2-th model>...[Epoch 22] Train acc: 69.1 (loss: 0.903), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 23] Train acc: 69.8 (loss: 0.892), Val acc: 73.0, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 24] Train acc: 69.6 (loss: 0.883), Val acc: 73.3, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 25] Train acc: 69.9 (loss: 0.888), Val acc: 73.5, Time: 0.85 seconds
+<Pretraining  2-th model>...[Epoch 26] Train acc: 70.1 (loss: 0.873), Val acc: 72.4, Time: 0.84 seconds
+<Pretraining  2-th model>...[Epoch 27] Train acc: 70.1 (loss: 0.867), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 28] Train acc: 70.5 (loss: 0.854), Val acc: 72.7, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 29] Train acc: 70.1 (loss: 0.876), Val acc: 72.6, Time: 0.63 seconds
+<Pretraining  2-th model>...[Epoch 30] Train acc: 70.6 (loss: 0.855), Val acc: 74.0, Time: 0.81 seconds
+<Pretraining  2-th model>...[Epoch 31] Train acc: 70.3 (loss: 0.863), Val acc: 73.3, Time: 0.90 seconds
+<Pretraining  2-th model>...[Epoch 32] Train acc: 69.8 (loss: 0.859), Val acc: 73.4, Time: 0.85 seconds
+<Pretraining  2-th model>...[Epoch 33] Train acc: 69.8 (loss: 0.869), Val acc: 73.8, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 34] Train acc: 70.7 (loss: 0.857), Val acc: 71.8, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 35] Train acc: 71.0 (loss: 0.852), Val acc: 74.3, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 36] Train acc: 71.2 (loss: 0.836), Val acc: 74.0, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch 37] Train acc: 70.9 (loss: 0.840), Val acc: 73.5, Time: 0.83 seconds
+<Pretraining  2-th model>...[Epoch 38] Train acc: 70.4 (loss: 0.849), Val acc: 74.0, Time: 0.66 seconds
+<Pretraining  2-th model>...[Epoch 39] Train acc: 71.3 (loss: 0.836), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 40] Train acc: 72.0 (loss: 0.807), Val acc: 74.4, Time: 0.85 seconds
+<Pretraining  2-th model>...[Epoch 41] Train acc: 71.9 (loss: 0.811), Val acc: 74.7, Time: 0.90 seconds
+<Pretraining  2-th model>...[Epoch 42] Train acc: 71.6 (loss: 0.831), Val acc: 74.8, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 43] Train acc: 72.4 (loss: 0.815), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 44] Train acc: 72.3 (loss: 0.796), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch 45] Train acc: 72.3 (loss: 0.803), Val acc: 75.0, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 46] Train acc: 72.6 (loss: 0.800), Val acc: 74.6, Time: 0.81 seconds
+<Pretraining  2-th model>...[Epoch 47] Train acc: 72.1 (loss: 0.805), Val acc: 74.6, Time: 0.68 seconds
+<Pretraining  2-th model>...[Epoch 48] Train acc: 72.3 (loss: 0.805), Val acc: 74.6, Time: 0.90 seconds
+<Pretraining  2-th model>...[Epoch 49] Train acc: 72.0 (loss: 0.805), Val acc: 74.6, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch 50] Train acc: 73.0 (loss: 0.780), Val acc: 74.8, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 51] Train acc: 72.1 (loss: 0.806), Val acc: 74.6, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 52] Train acc: 72.6 (loss: 0.793), Val acc: 74.9, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 53] Train acc: 73.0 (loss: 0.782), Val acc: 74.5, Time: 0.88 seconds
+<Pretraining  2-th model>...[Epoch 54] Train acc: 72.8 (loss: 0.782), Val acc: 74.7, Time: 0.84 seconds
+<Pretraining  2-th model>...[Epoch 55] Train acc: 72.1 (loss: 0.793), Val acc: 75.2, Time: 0.65 seconds
+<Pretraining  2-th model>...[Epoch 56] Train acc: 72.0 (loss: 0.809), Val acc: 74.8, Time: 0.82 seconds
+<Pretraining  2-th model>...[Epoch 57] Train acc: 72.3 (loss: 0.808), Val acc: 75.0, Time: 0.87 seconds
+<Pretraining  2-th model>...[Epoch 58] Train acc: 72.5 (loss: 0.798), Val acc: 74.5, Time: 0.86 seconds
+<Pretraining  2-th model>...[Epoch 59] Train acc: 72.7 (loss: 0.813), Val acc: 74.6, Time: 0.88 seconds
+Model 2 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel2_trained.pth.tar
+Training model 4/20
+Model 3 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel3_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  3-th model>...[Epoch  0] Train acc: 65.8 (loss: 1.130), Val acc: 67.0, Time: 0.89 seconds
+<Pretraining  3-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.049), Val acc: 65.5, Time: 0.89 seconds
+<Pretraining  3-th model>...[Epoch  2] Train acc: 66.9 (loss: 1.018), Val acc: 68.9, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch  3] Train acc: 67.2 (loss: 1.009), Val acc: 70.3, Time: 0.84 seconds
+<Pretraining  3-th model>...[Epoch  4] Train acc: 67.0 (loss: 0.978), Val acc: 70.3, Time: 0.68 seconds
+<Pretraining  3-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.973), Val acc: 69.7, Time: 0.85 seconds
+<Pretraining  3-th model>...[Epoch  6] Train acc: 67.2 (loss: 0.959), Val acc: 68.6, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch  7] Train acc: 67.8 (loss: 0.945), Val acc: 71.0, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch  8] Train acc: 68.4 (loss: 0.931), Val acc: 70.2, Time: 0.84 seconds
+<Pretraining  3-th model>...[Epoch  9] Train acc: 68.1 (loss: 0.935), Val acc: 69.7, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 10] Train acc: 68.6 (loss: 0.914), Val acc: 72.9, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 11] Train acc: 67.9 (loss: 0.943), Val acc: 70.7, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 12] Train acc: 68.9 (loss: 0.906), Val acc: 73.0, Time: 0.76 seconds
+<Pretraining  3-th model>...[Epoch 13] Train acc: 69.3 (loss: 0.901), Val acc: 72.5, Time: 0.70 seconds
+<Pretraining  3-th model>...[Epoch 14] Train acc: 68.6 (loss: 0.921), Val acc: 72.7, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 15] Train acc: 69.5 (loss: 0.895), Val acc: 72.6, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 16] Train acc: 69.1 (loss: 0.901), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 17] Train acc: 69.7 (loss: 0.878), Val acc: 72.3, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 18] Train acc: 69.2 (loss: 0.894), Val acc: 71.9, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 19] Train acc: 69.6 (loss: 0.875), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 20] Train acc: 69.8 (loss: 0.881), Val acc: 71.0, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 21] Train acc: 69.8 (loss: 0.890), Val acc: 72.6, Time: 0.64 seconds
+<Pretraining  3-th model>...[Epoch 22] Train acc: 69.3 (loss: 0.886), Val acc: 71.9, Time: 0.84 seconds
+<Pretraining  3-th model>...[Epoch 23] Train acc: 70.4 (loss: 0.872), Val acc: 72.9, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 24] Train acc: 69.9 (loss: 0.885), Val acc: 72.4, Time: 0.89 seconds
+<Pretraining  3-th model>...[Epoch 25] Train acc: 70.1 (loss: 0.870), Val acc: 72.1, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 26] Train acc: 70.5 (loss: 0.860), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 27] Train acc: 70.2 (loss: 0.876), Val acc: 74.1, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 28] Train acc: 70.3 (loss: 0.864), Val acc: 73.1, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 29] Train acc: 70.6 (loss: 0.846), Val acc: 73.2, Time: 0.84 seconds
+<Pretraining  3-th model>...[Epoch 30] Train acc: 70.4 (loss: 0.855), Val acc: 73.3, Time: 0.67 seconds
+<Pretraining  3-th model>...[Epoch 31] Train acc: 70.6 (loss: 0.855), Val acc: 72.6, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 32] Train acc: 70.4 (loss: 0.861), Val acc: 74.6, Time: 0.89 seconds
+<Pretraining  3-th model>...[Epoch 33] Train acc: 70.5 (loss: 0.858), Val acc: 73.3, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 34] Train acc: 70.5 (loss: 0.860), Val acc: 72.7, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 35] Train acc: 70.0 (loss: 0.865), Val acc: 74.5, Time: 0.85 seconds
+<Pretraining  3-th model>...[Epoch 36] Train acc: 71.0 (loss: 0.843), Val acc: 73.8, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 37] Train acc: 71.2 (loss: 0.843), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 38] Train acc: 71.1 (loss: 0.844), Val acc: 74.2, Time: 0.75 seconds
+<Pretraining  3-th model>...[Epoch 39] Train acc: 71.0 (loss: 0.851), Val acc: 73.1, Time: 0.72 seconds
+<Pretraining  3-th model>...[Epoch 40] Train acc: 72.8 (loss: 0.802), Val acc: 74.2, Time: 0.89 seconds
+<Pretraining  3-th model>...[Epoch 41] Train acc: 72.2 (loss: 0.800), Val acc: 75.3, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 42] Train acc: 72.1 (loss: 0.810), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 43] Train acc: 71.8 (loss: 0.821), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 44] Train acc: 72.7 (loss: 0.784), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 45] Train acc: 71.7 (loss: 0.821), Val acc: 74.8, Time: 0.90 seconds
+<Pretraining  3-th model>...[Epoch 46] Train acc: 72.1 (loss: 0.803), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 47] Train acc: 73.1 (loss: 0.784), Val acc: 74.4, Time: 0.62 seconds
+<Pretraining  3-th model>...[Epoch 48] Train acc: 72.1 (loss: 0.810), Val acc: 74.2, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 49] Train acc: 72.6 (loss: 0.784), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 50] Train acc: 73.1 (loss: 0.783), Val acc: 74.5, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 51] Train acc: 73.2 (loss: 0.777), Val acc: 74.0, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 52] Train acc: 73.0 (loss: 0.796), Val acc: 74.2, Time: 0.87 seconds
+<Pretraining  3-th model>...[Epoch 53] Train acc: 72.3 (loss: 0.795), Val acc: 74.3, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 54] Train acc: 72.4 (loss: 0.807), Val acc: 74.4, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 55] Train acc: 72.4 (loss: 0.807), Val acc: 74.6, Time: 0.82 seconds
+<Pretraining  3-th model>...[Epoch 56] Train acc: 73.3 (loss: 0.767), Val acc: 74.3, Time: 0.65 seconds
+<Pretraining  3-th model>...[Epoch 57] Train acc: 72.4 (loss: 0.807), Val acc: 74.6, Time: 0.86 seconds
+<Pretraining  3-th model>...[Epoch 58] Train acc: 73.1 (loss: 0.782), Val acc: 74.3, Time: 0.88 seconds
+<Pretraining  3-th model>...[Epoch 59] Train acc: 73.5 (loss: 0.753), Val acc: 74.2, Time: 0.87 seconds
+Model 3 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel3_trained.pth.tar
+Training model 5/20
+Model 4 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel4_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  4-th model>...[Epoch  0] Train acc: 65.9 (loss: 1.134), Val acc: 67.0, Time: 0.91 seconds
+<Pretraining  4-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.058), Val acc: 65.2, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch  2] Train acc: 67.1 (loss: 1.020), Val acc: 68.4, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch  3] Train acc: 67.2 (loss: 1.010), Val acc: 69.0, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch  4] Train acc: 67.1 (loss: 0.987), Val acc: 70.4, Time: 0.66 seconds
+<Pretraining  4-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.965), Val acc: 70.4, Time: 0.82 seconds
+<Pretraining  4-th model>...[Epoch  6] Train acc: 67.4 (loss: 0.969), Val acc: 69.9, Time: 0.90 seconds
+<Pretraining  4-th model>...[Epoch  7] Train acc: 67.9 (loss: 0.942), Val acc: 71.4, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch  8] Train acc: 68.1 (loss: 0.942), Val acc: 70.4, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch  9] Train acc: 67.8 (loss: 0.950), Val acc: 70.4, Time: 0.88 seconds
+<Pretraining  4-th model>...[Epoch 10] Train acc: 68.9 (loss: 0.924), Val acc: 72.9, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 11] Train acc: 68.7 (loss: 0.915), Val acc: 71.0, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 12] Train acc: 68.7 (loss: 0.923), Val acc: 73.4, Time: 0.82 seconds
+<Pretraining  4-th model>...[Epoch 13] Train acc: 68.6 (loss: 0.938), Val acc: 72.1, Time: 0.70 seconds
+<Pretraining  4-th model>...[Epoch 14] Train acc: 69.0 (loss: 0.907), Val acc: 72.5, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 15] Train acc: 68.8 (loss: 0.911), Val acc: 71.4, Time: 0.89 seconds
+<Pretraining  4-th model>...[Epoch 16] Train acc: 69.1 (loss: 0.902), Val acc: 71.9, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 17] Train acc: 70.0 (loss: 0.875), Val acc: 71.8, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 18] Train acc: 69.4 (loss: 0.890), Val acc: 70.4, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch 19] Train acc: 69.2 (loss: 0.901), Val acc: 72.4, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 20] Train acc: 70.0 (loss: 0.872), Val acc: 71.5, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 21] Train acc: 69.6 (loss: 0.878), Val acc: 72.9, Time: 0.76 seconds
+<Pretraining  4-th model>...[Epoch 22] Train acc: 69.6 (loss: 0.885), Val acc: 70.8, Time: 0.75 seconds
+<Pretraining  4-th model>...[Epoch 23] Train acc: 70.0 (loss: 0.871), Val acc: 72.5, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 24] Train acc: 69.5 (loss: 0.895), Val acc: 72.9, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 25] Train acc: 69.7 (loss: 0.877), Val acc: 71.2, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 26] Train acc: 70.4 (loss: 0.859), Val acc: 71.9, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 27] Train acc: 70.2 (loss: 0.877), Val acc: 74.7, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 28] Train acc: 70.7 (loss: 0.846), Val acc: 73.0, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 29] Train acc: 70.3 (loss: 0.850), Val acc: 73.4, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 30] Train acc: 70.4 (loss: 0.867), Val acc: 74.4, Time: 0.66 seconds
+<Pretraining  4-th model>...[Epoch 31] Train acc: 70.5 (loss: 0.862), Val acc: 73.8, Time: 0.83 seconds
+<Pretraining  4-th model>...[Epoch 32] Train acc: 70.1 (loss: 0.881), Val acc: 73.4, Time: 0.89 seconds
+<Pretraining  4-th model>...[Epoch 33] Train acc: 71.0 (loss: 0.849), Val acc: 72.5, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 34] Train acc: 70.7 (loss: 0.848), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 35] Train acc: 70.5 (loss: 0.858), Val acc: 72.4, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 36] Train acc: 71.5 (loss: 0.846), Val acc: 74.3, Time: 0.88 seconds
+<Pretraining  4-th model>...[Epoch 37] Train acc: 70.4 (loss: 0.862), Val acc: 72.3, Time: 0.89 seconds
+<Pretraining  4-th model>...[Epoch 38] Train acc: 70.7 (loss: 0.844), Val acc: 73.7, Time: 0.82 seconds
+<Pretraining  4-th model>...[Epoch 39] Train acc: 71.2 (loss: 0.836), Val acc: 72.7, Time: 0.67 seconds
+<Pretraining  4-th model>...[Epoch 40] Train acc: 72.6 (loss: 0.807), Val acc: 74.6, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 41] Train acc: 72.2 (loss: 0.824), Val acc: 74.5, Time: 0.89 seconds
+<Pretraining  4-th model>...[Epoch 42] Train acc: 72.5 (loss: 0.808), Val acc: 73.9, Time: 0.89 seconds
+<Pretraining  4-th model>...[Epoch 43] Train acc: 72.2 (loss: 0.803), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch 44] Train acc: 73.0 (loss: 0.797), Val acc: 74.1, Time: 0.85 seconds
+<Pretraining  4-th model>...[Epoch 45] Train acc: 72.3 (loss: 0.816), Val acc: 74.7, Time: 0.90 seconds
+<Pretraining  4-th model>...[Epoch 46] Train acc: 72.4 (loss: 0.811), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 47] Train acc: 71.5 (loss: 0.828), Val acc: 74.3, Time: 0.71 seconds
+<Pretraining  4-th model>...[Epoch 48] Train acc: 73.3 (loss: 0.780), Val acc: 74.0, Time: 0.79 seconds
+<Pretraining  4-th model>...[Epoch 49] Train acc: 71.8 (loss: 0.811), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch 50] Train acc: 72.3 (loss: 0.812), Val acc: 74.2, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 51] Train acc: 72.2 (loss: 0.816), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 52] Train acc: 72.5 (loss: 0.803), Val acc: 74.0, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 53] Train acc: 73.3 (loss: 0.776), Val acc: 74.0, Time: 0.87 seconds
+<Pretraining  4-th model>...[Epoch 54] Train acc: 72.1 (loss: 0.802), Val acc: 74.2, Time: 0.90 seconds
+<Pretraining  4-th model>...[Epoch 55] Train acc: 74.0 (loss: 0.762), Val acc: 74.2, Time: 0.88 seconds
+<Pretraining  4-th model>...[Epoch 56] Train acc: 72.4 (loss: 0.799), Val acc: 74.2, Time: 0.63 seconds
+<Pretraining  4-th model>...[Epoch 57] Train acc: 72.8 (loss: 0.793), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining  4-th model>...[Epoch 58] Train acc: 72.4 (loss: 0.804), Val acc: 74.4, Time: 0.89 seconds
+<Pretraining  4-th model>...[Epoch 59] Train acc: 71.9 (loss: 0.808), Val acc: 73.9, Time: 0.89 seconds
+Model 4 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel4_trained.pth.tar
+Training model 6/20
+Model 5 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel5_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  5-th model>...[Epoch  0] Train acc: 66.1 (loss: 1.128), Val acc: 66.9, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch  1] Train acc: 67.1 (loss: 1.039), Val acc: 64.2, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.036), Val acc: 68.6, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch  3] Train acc: 67.3 (loss: 1.008), Val acc: 70.0, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch  4] Train acc: 66.9 (loss: 0.988), Val acc: 68.7, Time: 0.79 seconds
+<Pretraining  5-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.960), Val acc: 71.5, Time: 0.67 seconds
+<Pretraining  5-th model>...[Epoch  6] Train acc: 67.7 (loss: 0.949), Val acc: 69.3, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch  7] Train acc: 67.4 (loss: 0.950), Val acc: 70.6, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch  8] Train acc: 68.4 (loss: 0.938), Val acc: 69.6, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch  9] Train acc: 68.4 (loss: 0.939), Val acc: 71.5, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 10] Train acc: 68.5 (loss: 0.942), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 11] Train acc: 69.3 (loss: 0.904), Val acc: 74.0, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 12] Train acc: 69.1 (loss: 0.910), Val acc: 72.6, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 13] Train acc: 68.3 (loss: 0.937), Val acc: 71.6, Time: 0.69 seconds
+<Pretraining  5-th model>...[Epoch 14] Train acc: 68.8 (loss: 0.911), Val acc: 72.8, Time: 0.82 seconds
+<Pretraining  5-th model>...[Epoch 15] Train acc: 68.9 (loss: 0.906), Val acc: 72.9, Time: 0.89 seconds
+<Pretraining  5-th model>...[Epoch 16] Train acc: 68.7 (loss: 0.903), Val acc: 72.1, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 17] Train acc: 69.4 (loss: 0.896), Val acc: 73.5, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 18] Train acc: 68.8 (loss: 0.898), Val acc: 72.0, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 19] Train acc: 69.9 (loss: 0.885), Val acc: 72.1, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 20] Train acc: 69.5 (loss: 0.879), Val acc: 72.3, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 21] Train acc: 69.7 (loss: 0.879), Val acc: 72.9, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 22] Train acc: 68.8 (loss: 0.913), Val acc: 71.3, Time: 0.65 seconds
+<Pretraining  5-th model>...[Epoch 23] Train acc: 70.4 (loss: 0.880), Val acc: 72.5, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 24] Train acc: 69.7 (loss: 0.882), Val acc: 72.9, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 25] Train acc: 69.8 (loss: 0.895), Val acc: 72.4, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 26] Train acc: 69.8 (loss: 0.873), Val acc: 72.2, Time: 0.84 seconds
+<Pretraining  5-th model>...[Epoch 27] Train acc: 69.7 (loss: 0.891), Val acc: 72.8, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 28] Train acc: 70.3 (loss: 0.872), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 29] Train acc: 70.0 (loss: 0.866), Val acc: 72.7, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 30] Train acc: 70.0 (loss: 0.877), Val acc: 73.9, Time: 0.77 seconds
+<Pretraining  5-th model>...[Epoch 31] Train acc: 70.2 (loss: 0.857), Val acc: 72.4, Time: 0.77 seconds
+<Pretraining  5-th model>...[Epoch 32] Train acc: 70.7 (loss: 0.860), Val acc: 72.8, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 33] Train acc: 71.2 (loss: 0.845), Val acc: 72.5, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 34] Train acc: 70.2 (loss: 0.833), Val acc: 72.2, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 35] Train acc: 70.9 (loss: 0.829), Val acc: 74.2, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 36] Train acc: 70.7 (loss: 0.872), Val acc: 72.0, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 37] Train acc: 71.4 (loss: 0.836), Val acc: 72.8, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 38] Train acc: 69.9 (loss: 0.882), Val acc: 73.8, Time: 0.89 seconds
+<Pretraining  5-th model>...[Epoch 39] Train acc: 71.1 (loss: 0.850), Val acc: 73.2, Time: 0.63 seconds
+<Pretraining  5-th model>...[Epoch 40] Train acc: 71.9 (loss: 0.811), Val acc: 73.8, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 41] Train acc: 71.1 (loss: 0.829), Val acc: 74.7, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 42] Train acc: 72.1 (loss: 0.796), Val acc: 73.4, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 43] Train acc: 73.3 (loss: 0.773), Val acc: 74.2, Time: 0.85 seconds
+<Pretraining  5-th model>...[Epoch 44] Train acc: 73.0 (loss: 0.778), Val acc: 73.8, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 45] Train acc: 72.3 (loss: 0.802), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 46] Train acc: 71.9 (loss: 0.809), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 47] Train acc: 72.9 (loss: 0.788), Val acc: 74.1, Time: 0.83 seconds
+<Pretraining  5-th model>...[Epoch 48] Train acc: 73.2 (loss: 0.767), Val acc: 74.5, Time: 0.66 seconds
+<Pretraining  5-th model>...[Epoch 49] Train acc: 72.5 (loss: 0.802), Val acc: 73.8, Time: 0.88 seconds
+<Pretraining  5-th model>...[Epoch 50] Train acc: 72.7 (loss: 0.794), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining  5-th model>...[Epoch 51] Train acc: 73.0 (loss: 0.789), Val acc: 74.2, Time: 0.91 seconds
+<Pretraining  5-th model>...[Epoch 52] Train acc: 73.4 (loss: 0.781), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 53] Train acc: 74.0 (loss: 0.742), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 54] Train acc: 73.0 (loss: 0.795), Val acc: 74.1, Time: 0.89 seconds
+<Pretraining  5-th model>...[Epoch 55] Train acc: 73.1 (loss: 0.783), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 56] Train acc: 73.2 (loss: 0.771), Val acc: 74.0, Time: 0.73 seconds
+<Pretraining  5-th model>...[Epoch 57] Train acc: 72.8 (loss: 0.788), Val acc: 74.0, Time: 0.71 seconds
+<Pretraining  5-th model>...[Epoch 58] Train acc: 73.0 (loss: 0.790), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining  5-th model>...[Epoch 59] Train acc: 73.3 (loss: 0.780), Val acc: 74.0, Time: 0.88 seconds
+Model 5 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel5_trained.pth.tar
+Training model 7/20
+Model 6 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel6_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  6-th model>...[Epoch  0] Train acc: 65.6 (loss: 1.120), Val acc: 67.5, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch  1] Train acc: 66.8 (loss: 1.030), Val acc: 68.1, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.030), Val acc: 68.5, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch  3] Train acc: 66.9 (loss: 1.000), Val acc: 69.1, Time: 0.89 seconds
+<Pretraining  6-th model>...[Epoch  4] Train acc: 67.2 (loss: 0.984), Val acc: 68.7, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.956), Val acc: 70.9, Time: 0.62 seconds
+<Pretraining  6-th model>...[Epoch  6] Train acc: 68.0 (loss: 0.941), Val acc: 70.0, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch  7] Train acc: 67.7 (loss: 0.947), Val acc: 69.9, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch  8] Train acc: 68.1 (loss: 0.935), Val acc: 70.5, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch  9] Train acc: 68.0 (loss: 0.950), Val acc: 72.5, Time: 0.91 seconds
+<Pretraining  6-th model>...[Epoch 10] Train acc: 68.0 (loss: 0.939), Val acc: 72.6, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 11] Train acc: 68.6 (loss: 0.925), Val acc: 72.7, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 12] Train acc: 68.8 (loss: 0.908), Val acc: 73.1, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 13] Train acc: 69.5 (loss: 0.889), Val acc: 72.9, Time: 0.82 seconds
+<Pretraining  6-th model>...[Epoch 14] Train acc: 68.9 (loss: 0.926), Val acc: 72.1, Time: 0.68 seconds
+<Pretraining  6-th model>...[Epoch 15] Train acc: 69.7 (loss: 0.891), Val acc: 72.0, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch 16] Train acc: 69.1 (loss: 0.902), Val acc: 69.6, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 17] Train acc: 69.6 (loss: 0.886), Val acc: 73.0, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch 18] Train acc: 70.9 (loss: 0.860), Val acc: 71.7, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 19] Train acc: 69.8 (loss: 0.890), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 20] Train acc: 69.5 (loss: 0.878), Val acc: 72.6, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 21] Train acc: 69.9 (loss: 0.878), Val acc: 73.0, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 22] Train acc: 69.9 (loss: 0.878), Val acc: 72.9, Time: 0.74 seconds
+<Pretraining  6-th model>...[Epoch 23] Train acc: 70.5 (loss: 0.862), Val acc: 73.0, Time: 0.73 seconds
+<Pretraining  6-th model>...[Epoch 24] Train acc: 69.3 (loss: 0.890), Val acc: 73.2, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch 25] Train acc: 69.9 (loss: 0.885), Val acc: 73.2, Time: 0.89 seconds
+<Pretraining  6-th model>...[Epoch 26] Train acc: 70.2 (loss: 0.864), Val acc: 72.4, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 27] Train acc: 70.0 (loss: 0.879), Val acc: 74.0, Time: 0.90 seconds
+<Pretraining  6-th model>...[Epoch 28] Train acc: 70.7 (loss: 0.858), Val acc: 74.0, Time: 0.91 seconds
+<Pretraining  6-th model>...[Epoch 29] Train acc: 70.0 (loss: 0.886), Val acc: 74.0, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 30] Train acc: 69.8 (loss: 0.875), Val acc: 73.2, Time: 0.89 seconds
+<Pretraining  6-th model>...[Epoch 31] Train acc: 70.4 (loss: 0.868), Val acc: 73.5, Time: 0.61 seconds
+<Pretraining  6-th model>...[Epoch 32] Train acc: 70.2 (loss: 0.862), Val acc: 73.5, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 33] Train acc: 71.0 (loss: 0.860), Val acc: 73.6, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 34] Train acc: 70.7 (loss: 0.841), Val acc: 72.0, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 35] Train acc: 70.7 (loss: 0.858), Val acc: 73.9, Time: 0.88 seconds
+<Pretraining  6-th model>...[Epoch 36] Train acc: 71.4 (loss: 0.839), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 37] Train acc: 71.0 (loss: 0.840), Val acc: 72.6, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 38] Train acc: 70.9 (loss: 0.864), Val acc: 73.6, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 39] Train acc: 70.7 (loss: 0.854), Val acc: 72.6, Time: 0.81 seconds
+<Pretraining  6-th model>...[Epoch 40] Train acc: 71.7 (loss: 0.823), Val acc: 74.0, Time: 0.68 seconds
+<Pretraining  6-th model>...[Epoch 41] Train acc: 72.5 (loss: 0.793), Val acc: 74.4, Time: 0.84 seconds
+<Pretraining  6-th model>...[Epoch 42] Train acc: 72.0 (loss: 0.816), Val acc: 73.6, Time: 0.88 seconds
+<Pretraining  6-th model>...[Epoch 43] Train acc: 72.6 (loss: 0.784), Val acc: 74.7, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch 44] Train acc: 72.5 (loss: 0.788), Val acc: 73.7, Time: 0.84 seconds
+<Pretraining  6-th model>...[Epoch 45] Train acc: 72.7 (loss: 0.795), Val acc: 74.9, Time: 0.89 seconds
+<Pretraining  6-th model>...[Epoch 46] Train acc: 73.1 (loss: 0.782), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining  6-th model>...[Epoch 47] Train acc: 72.5 (loss: 0.791), Val acc: 74.2, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch 48] Train acc: 72.5 (loss: 0.805), Val acc: 75.0, Time: 0.79 seconds
+<Pretraining  6-th model>...[Epoch 49] Train acc: 72.2 (loss: 0.808), Val acc: 74.6, Time: 0.69 seconds
+<Pretraining  6-th model>...[Epoch 50] Train acc: 72.9 (loss: 0.782), Val acc: 74.6, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 51] Train acc: 73.3 (loss: 0.771), Val acc: 74.9, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 52] Train acc: 72.2 (loss: 0.790), Val acc: 74.8, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 53] Train acc: 72.8 (loss: 0.800), Val acc: 74.2, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 54] Train acc: 72.5 (loss: 0.794), Val acc: 75.3, Time: 0.89 seconds
+<Pretraining  6-th model>...[Epoch 55] Train acc: 73.5 (loss: 0.757), Val acc: 74.8, Time: 0.85 seconds
+<Pretraining  6-th model>...[Epoch 56] Train acc: 72.6 (loss: 0.795), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 57] Train acc: 72.2 (loss: 0.796), Val acc: 74.1, Time: 0.65 seconds
+<Pretraining  6-th model>...[Epoch 58] Train acc: 73.1 (loss: 0.769), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  6-th model>...[Epoch 59] Train acc: 73.7 (loss: 0.770), Val acc: 74.3, Time: 0.87 seconds
+Model 6 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel6_trained.pth.tar
+Training model 8/20
+Model 7 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel7_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  7-th model>...[Epoch  0] Train acc: 65.4 (loss: 1.138), Val acc: 66.9, Time: 0.88 seconds
+<Pretraining  7-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.039), Val acc: 66.9, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.016), Val acc: 68.6, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch  3] Train acc: 67.3 (loss: 1.002), Val acc: 69.3, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch  4] Train acc: 67.3 (loss: 0.994), Val acc: 69.1, Time: 0.88 seconds
+<Pretraining  7-th model>...[Epoch  5] Train acc: 67.2 (loss: 0.986), Val acc: 69.5, Time: 0.84 seconds
+<Pretraining  7-th model>...[Epoch  6] Train acc: 67.6 (loss: 0.965), Val acc: 68.4, Time: 0.65 seconds
+<Pretraining  7-th model>...[Epoch  7] Train acc: 68.1 (loss: 0.960), Val acc: 72.4, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch  8] Train acc: 67.7 (loss: 0.972), Val acc: 70.3, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch  9] Train acc: 68.1 (loss: 0.938), Val acc: 70.4, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 10] Train acc: 68.4 (loss: 0.927), Val acc: 72.8, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 11] Train acc: 67.7 (loss: 0.931), Val acc: 71.8, Time: 0.85 seconds
+<Pretraining  7-th model>...[Epoch 12] Train acc: 68.1 (loss: 0.939), Val acc: 72.9, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 13] Train acc: 68.5 (loss: 0.927), Val acc: 71.0, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 14] Train acc: 68.6 (loss: 0.931), Val acc: 72.2, Time: 0.72 seconds
+<Pretraining  7-th model>...[Epoch 15] Train acc: 68.8 (loss: 0.915), Val acc: 72.0, Time: 0.75 seconds
+<Pretraining  7-th model>...[Epoch 16] Train acc: 69.1 (loss: 0.906), Val acc: 72.0, Time: 0.92 seconds
+<Pretraining  7-th model>...[Epoch 17] Train acc: 68.8 (loss: 0.912), Val acc: 72.4, Time: 0.89 seconds
+<Pretraining  7-th model>...[Epoch 18] Train acc: 68.9 (loss: 0.895), Val acc: 71.8, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 19] Train acc: 69.7 (loss: 0.874), Val acc: 73.0, Time: 0.83 seconds
+<Pretraining  7-th model>...[Epoch 20] Train acc: 69.2 (loss: 0.900), Val acc: 73.6, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 21] Train acc: 70.0 (loss: 0.885), Val acc: 72.3, Time: 0.88 seconds
+<Pretraining  7-th model>...[Epoch 22] Train acc: 69.3 (loss: 0.893), Val acc: 72.3, Time: 0.89 seconds
+<Pretraining  7-th model>...[Epoch 23] Train acc: 70.1 (loss: 0.861), Val acc: 72.6, Time: 0.66 seconds
+<Pretraining  7-th model>...[Epoch 24] Train acc: 69.4 (loss: 0.902), Val acc: 73.2, Time: 0.89 seconds
+<Pretraining  7-th model>...[Epoch 25] Train acc: 70.0 (loss: 0.892), Val acc: 71.9, Time: 0.88 seconds
+<Pretraining  7-th model>...[Epoch 26] Train acc: 69.9 (loss: 0.874), Val acc: 71.5, Time: 0.90 seconds
+<Pretraining  7-th model>...[Epoch 27] Train acc: 69.9 (loss: 0.889), Val acc: 73.5, Time: 0.89 seconds
+<Pretraining  7-th model>...[Epoch 28] Train acc: 70.5 (loss: 0.863), Val acc: 72.9, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 29] Train acc: 70.9 (loss: 0.856), Val acc: 71.5, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 30] Train acc: 69.5 (loss: 0.895), Val acc: 74.0, Time: 0.89 seconds
+<Pretraining  7-th model>...[Epoch 31] Train acc: 70.2 (loss: 0.864), Val acc: 72.8, Time: 0.74 seconds
+<Pretraining  7-th model>...[Epoch 32] Train acc: 69.9 (loss: 0.866), Val acc: 73.4, Time: 0.76 seconds
+<Pretraining  7-th model>...[Epoch 33] Train acc: 70.9 (loss: 0.837), Val acc: 72.9, Time: 0.84 seconds
+<Pretraining  7-th model>...[Epoch 34] Train acc: 70.9 (loss: 0.850), Val acc: 71.4, Time: 0.90 seconds
+<Pretraining  7-th model>...[Epoch 35] Train acc: 70.3 (loss: 0.864), Val acc: 73.6, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 36] Train acc: 70.8 (loss: 0.856), Val acc: 72.8, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 37] Train acc: 71.0 (loss: 0.845), Val acc: 72.3, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 38] Train acc: 70.9 (loss: 0.840), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 39] Train acc: 71.1 (loss: 0.834), Val acc: 73.3, Time: 0.84 seconds
+<Pretraining  7-th model>...[Epoch 40] Train acc: 72.1 (loss: 0.815), Val acc: 73.8, Time: 0.61 seconds
+<Pretraining  7-th model>...[Epoch 41] Train acc: 72.2 (loss: 0.807), Val acc: 74.7, Time: 0.85 seconds
+<Pretraining  7-th model>...[Epoch 42] Train acc: 72.5 (loss: 0.811), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 43] Train acc: 72.0 (loss: 0.815), Val acc: 74.3, Time: 0.88 seconds
+<Pretraining  7-th model>...[Epoch 44] Train acc: 71.7 (loss: 0.805), Val acc: 73.9, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 45] Train acc: 72.4 (loss: 0.799), Val acc: 74.6, Time: 0.89 seconds
+<Pretraining  7-th model>...[Epoch 46] Train acc: 72.1 (loss: 0.811), Val acc: 74.4, Time: 0.90 seconds
+<Pretraining  7-th model>...[Epoch 47] Train acc: 72.9 (loss: 0.784), Val acc: 74.7, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 48] Train acc: 72.3 (loss: 0.807), Val acc: 74.2, Time: 0.81 seconds
+<Pretraining  7-th model>...[Epoch 49] Train acc: 72.3 (loss: 0.799), Val acc: 74.4, Time: 0.67 seconds
+<Pretraining  7-th model>...[Epoch 50] Train acc: 72.8 (loss: 0.786), Val acc: 73.8, Time: 0.88 seconds
+<Pretraining  7-th model>...[Epoch 51] Train acc: 72.7 (loss: 0.792), Val acc: 74.1, Time: 0.85 seconds
+<Pretraining  7-th model>...[Epoch 52] Train acc: 72.7 (loss: 0.790), Val acc: 74.1, Time: 0.88 seconds
+<Pretraining  7-th model>...[Epoch 53] Train acc: 72.7 (loss: 0.783), Val acc: 73.7, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 54] Train acc: 73.1 (loss: 0.779), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining  7-th model>...[Epoch 55] Train acc: 72.6 (loss: 0.792), Val acc: 74.0, Time: 0.86 seconds
+<Pretraining  7-th model>...[Epoch 56] Train acc: 72.3 (loss: 0.807), Val acc: 73.8, Time: 0.90 seconds
+<Pretraining  7-th model>...[Epoch 57] Train acc: 73.4 (loss: 0.764), Val acc: 74.4, Time: 0.71 seconds
+<Pretraining  7-th model>...[Epoch 58] Train acc: 73.6 (loss: 0.757), Val acc: 74.2, Time: 0.77 seconds
+<Pretraining  7-th model>...[Epoch 59] Train acc: 73.1 (loss: 0.784), Val acc: 74.0, Time: 0.87 seconds
+Model 7 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel7_trained.pth.tar
+Training model 9/20
+Model 8 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel8_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  8-th model>...[Epoch  0] Train acc: 65.8 (loss: 1.136), Val acc: 67.0, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.042), Val acc: 67.8, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch  2] Train acc: 67.1 (loss: 1.005), Val acc: 68.0, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch  3] Train acc: 67.4 (loss: 1.001), Val acc: 70.0, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch  4] Train acc: 67.3 (loss: 0.997), Val acc: 68.8, Time: 0.89 seconds
+<Pretraining  8-th model>...[Epoch  5] Train acc: 67.9 (loss: 0.946), Val acc: 69.9, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch  6] Train acc: 67.2 (loss: 0.960), Val acc: 69.8, Time: 0.66 seconds
+<Pretraining  8-th model>...[Epoch  7] Train acc: 68.1 (loss: 0.947), Val acc: 69.3, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch  8] Train acc: 68.1 (loss: 0.945), Val acc: 70.0, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch  9] Train acc: 68.5 (loss: 0.928), Val acc: 70.3, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 10] Train acc: 68.8 (loss: 0.919), Val acc: 69.6, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 11] Train acc: 68.8 (loss: 0.917), Val acc: 71.6, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 12] Train acc: 69.0 (loss: 0.916), Val acc: 73.2, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 13] Train acc: 68.5 (loss: 0.927), Val acc: 72.6, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 14] Train acc: 68.5 (loss: 0.930), Val acc: 70.2, Time: 0.78 seconds
+<Pretraining  8-th model>...[Epoch 15] Train acc: 69.7 (loss: 0.877), Val acc: 72.4, Time: 0.70 seconds
+<Pretraining  8-th model>...[Epoch 16] Train acc: 68.9 (loss: 0.906), Val acc: 73.3, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 17] Train acc: 69.1 (loss: 0.898), Val acc: 73.2, Time: 0.90 seconds
+<Pretraining  8-th model>...[Epoch 18] Train acc: 69.8 (loss: 0.876), Val acc: 71.9, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 19] Train acc: 69.6 (loss: 0.884), Val acc: 72.9, Time: 0.85 seconds
+<Pretraining  8-th model>...[Epoch 20] Train acc: 69.4 (loss: 0.897), Val acc: 72.7, Time: 0.92 seconds
+<Pretraining  8-th model>...[Epoch 21] Train acc: 69.9 (loss: 0.876), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 22] Train acc: 69.9 (loss: 0.874), Val acc: 71.5, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 23] Train acc: 69.8 (loss: 0.881), Val acc: 72.4, Time: 0.63 seconds
+<Pretraining  8-th model>...[Epoch 24] Train acc: 69.9 (loss: 0.880), Val acc: 73.6, Time: 0.84 seconds
+<Pretraining  8-th model>...[Epoch 25] Train acc: 69.5 (loss: 0.894), Val acc: 72.0, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 26] Train acc: 71.0 (loss: 0.849), Val acc: 72.2, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 27] Train acc: 70.4 (loss: 0.868), Val acc: 73.4, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 28] Train acc: 70.5 (loss: 0.858), Val acc: 73.3, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 29] Train acc: 70.4 (loss: 0.848), Val acc: 73.1, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 30] Train acc: 69.9 (loss: 0.867), Val acc: 73.6, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 31] Train acc: 70.2 (loss: 0.866), Val acc: 72.8, Time: 0.84 seconds
+<Pretraining  8-th model>...[Epoch 32] Train acc: 70.2 (loss: 0.861), Val acc: 73.2, Time: 0.70 seconds
+<Pretraining  8-th model>...[Epoch 33] Train acc: 71.2 (loss: 0.822), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 34] Train acc: 71.0 (loss: 0.842), Val acc: 71.1, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 35] Train acc: 70.8 (loss: 0.836), Val acc: 73.6, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 36] Train acc: 70.2 (loss: 0.843), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 37] Train acc: 71.1 (loss: 0.837), Val acc: 72.8, Time: 0.89 seconds
+<Pretraining  8-th model>...[Epoch 38] Train acc: 71.0 (loss: 0.848), Val acc: 74.5, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 39] Train acc: 71.4 (loss: 0.839), Val acc: 73.4, Time: 0.85 seconds
+<Pretraining  8-th model>...[Epoch 40] Train acc: 71.3 (loss: 0.837), Val acc: 74.7, Time: 0.71 seconds
+<Pretraining  8-th model>...[Epoch 41] Train acc: 71.9 (loss: 0.813), Val acc: 74.5, Time: 0.77 seconds
+<Pretraining  8-th model>...[Epoch 42] Train acc: 71.4 (loss: 0.818), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 43] Train acc: 72.1 (loss: 0.792), Val acc: 75.0, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 44] Train acc: 72.1 (loss: 0.793), Val acc: 74.4, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 45] Train acc: 73.4 (loss: 0.771), Val acc: 75.1, Time: 0.89 seconds
+<Pretraining  8-th model>...[Epoch 46] Train acc: 72.6 (loss: 0.805), Val acc: 74.9, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 47] Train acc: 72.5 (loss: 0.797), Val acc: 74.8, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 48] Train acc: 71.9 (loss: 0.818), Val acc: 74.8, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 49] Train acc: 73.0 (loss: 0.787), Val acc: 74.4, Time: 0.66 seconds
+<Pretraining  8-th model>...[Epoch 50] Train acc: 73.6 (loss: 0.764), Val acc: 74.5, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 51] Train acc: 73.2 (loss: 0.782), Val acc: 74.6, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 52] Train acc: 73.7 (loss: 0.758), Val acc: 74.9, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 53] Train acc: 73.2 (loss: 0.766), Val acc: 74.7, Time: 0.88 seconds
+<Pretraining  8-th model>...[Epoch 54] Train acc: 73.4 (loss: 0.778), Val acc: 74.8, Time: 0.86 seconds
+<Pretraining  8-th model>...[Epoch 55] Train acc: 72.4 (loss: 0.798), Val acc: 74.8, Time: 0.89 seconds
+<Pretraining  8-th model>...[Epoch 56] Train acc: 72.8 (loss: 0.783), Val acc: 74.7, Time: 0.87 seconds
+<Pretraining  8-th model>...[Epoch 57] Train acc: 73.8 (loss: 0.782), Val acc: 74.5, Time: 0.76 seconds
+<Pretraining  8-th model>...[Epoch 58] Train acc: 73.3 (loss: 0.775), Val acc: 74.6, Time: 0.75 seconds
+<Pretraining  8-th model>...[Epoch 59] Train acc: 72.6 (loss: 0.805), Val acc: 74.6, Time: 0.87 seconds
+Model 8 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel8_trained.pth.tar
+Training model 10/20
+Model 9 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel9_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining  9-th model>...[Epoch  0] Train acc: 65.7 (loss: 1.127), Val acc: 66.9, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch  1] Train acc: 66.9 (loss: 1.040), Val acc: 63.8, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.021), Val acc: 68.7, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch  3] Train acc: 67.3 (loss: 0.990), Val acc: 68.8, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch  4] Train acc: 67.4 (loss: 0.965), Val acc: 69.3, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.960), Val acc: 69.6, Time: 0.89 seconds
+<Pretraining  9-th model>...[Epoch  6] Train acc: 67.5 (loss: 0.960), Val acc: 69.4, Time: 0.62 seconds
+<Pretraining  9-th model>...[Epoch  7] Train acc: 68.3 (loss: 0.935), Val acc: 70.9, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch  8] Train acc: 68.1 (loss: 0.929), Val acc: 70.4, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch  9] Train acc: 68.1 (loss: 0.944), Val acc: 69.8, Time: 0.89 seconds
+<Pretraining  9-th model>...[Epoch 10] Train acc: 68.4 (loss: 0.948), Val acc: 72.0, Time: 0.90 seconds
+<Pretraining  9-th model>...[Epoch 11] Train acc: 68.3 (loss: 0.921), Val acc: 71.4, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 12] Train acc: 68.4 (loss: 0.929), Val acc: 71.5, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 13] Train acc: 69.2 (loss: 0.898), Val acc: 70.9, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 14] Train acc: 68.9 (loss: 0.907), Val acc: 71.5, Time: 0.83 seconds
+<Pretraining  9-th model>...[Epoch 15] Train acc: 69.1 (loss: 0.908), Val acc: 72.2, Time: 0.65 seconds
+<Pretraining  9-th model>...[Epoch 16] Train acc: 68.5 (loss: 0.923), Val acc: 72.7, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch 17] Train acc: 69.3 (loss: 0.895), Val acc: 72.0, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 18] Train acc: 69.9 (loss: 0.893), Val acc: 70.8, Time: 0.89 seconds
+<Pretraining  9-th model>...[Epoch 19] Train acc: 70.0 (loss: 0.883), Val acc: 72.8, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 20] Train acc: 69.6 (loss: 0.873), Val acc: 72.2, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch 21] Train acc: 69.3 (loss: 0.891), Val acc: 73.7, Time: 0.85 seconds
+<Pretraining  9-th model>...[Epoch 22] Train acc: 70.1 (loss: 0.857), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 23] Train acc: 70.0 (loss: 0.878), Val acc: 72.7, Time: 0.71 seconds
+<Pretraining  9-th model>...[Epoch 24] Train acc: 69.4 (loss: 0.892), Val acc: 72.7, Time: 0.77 seconds
+<Pretraining  9-th model>...[Epoch 25] Train acc: 69.8 (loss: 0.872), Val acc: 72.4, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 26] Train acc: 69.8 (loss: 0.884), Val acc: 71.9, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 27] Train acc: 70.2 (loss: 0.869), Val acc: 74.0, Time: 0.90 seconds
+<Pretraining  9-th model>...[Epoch 28] Train acc: 70.3 (loss: 0.857), Val acc: 73.2, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 29] Train acc: 70.9 (loss: 0.841), Val acc: 72.8, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 30] Train acc: 71.0 (loss: 0.840), Val acc: 74.0, Time: 0.90 seconds
+<Pretraining  9-th model>...[Epoch 31] Train acc: 70.1 (loss: 0.865), Val acc: 73.4, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 32] Train acc: 70.8 (loss: 0.833), Val acc: 72.4, Time: 0.61 seconds
+<Pretraining  9-th model>...[Epoch 33] Train acc: 70.7 (loss: 0.852), Val acc: 72.5, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 34] Train acc: 71.3 (loss: 0.834), Val acc: 72.7, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 35] Train acc: 70.8 (loss: 0.846), Val acc: 72.9, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 36] Train acc: 70.9 (loss: 0.849), Val acc: 73.0, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch 37] Train acc: 70.5 (loss: 0.870), Val acc: 72.7, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch 38] Train acc: 70.8 (loss: 0.834), Val acc: 74.4, Time: 0.86 seconds
+<Pretraining  9-th model>...[Epoch 39] Train acc: 70.8 (loss: 0.854), Val acc: 72.0, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch 40] Train acc: 71.9 (loss: 0.820), Val acc: 73.1, Time: 0.83 seconds
+<Pretraining  9-th model>...[Epoch 41] Train acc: 72.2 (loss: 0.815), Val acc: 74.0, Time: 0.71 seconds
+<Pretraining  9-th model>...[Epoch 42] Train acc: 71.1 (loss: 0.841), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 43] Train acc: 71.7 (loss: 0.808), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 44] Train acc: 73.0 (loss: 0.780), Val acc: 73.5, Time: 0.89 seconds
+<Pretraining  9-th model>...[Epoch 45] Train acc: 72.7 (loss: 0.809), Val acc: 74.5, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch 46] Train acc: 72.5 (loss: 0.798), Val acc: 73.8, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 47] Train acc: 72.8 (loss: 0.803), Val acc: 74.2, Time: 0.88 seconds
+<Pretraining  9-th model>...[Epoch 48] Train acc: 71.3 (loss: 0.841), Val acc: 74.5, Time: 0.91 seconds
+<Pretraining  9-th model>...[Epoch 49] Train acc: 73.0 (loss: 0.789), Val acc: 74.7, Time: 0.68 seconds
+<Pretraining  9-th model>...[Epoch 50] Train acc: 72.6 (loss: 0.814), Val acc: 74.6, Time: 0.79 seconds
+<Pretraining  9-th model>...[Epoch 51] Train acc: 71.5 (loss: 0.816), Val acc: 74.8, Time: 0.91 seconds
+<Pretraining  9-th model>...[Epoch 52] Train acc: 72.9 (loss: 0.783), Val acc: 74.2, Time: 0.85 seconds
+<Pretraining  9-th model>...[Epoch 53] Train acc: 73.0 (loss: 0.779), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 54] Train acc: 72.4 (loss: 0.804), Val acc: 74.5, Time: 0.89 seconds
+<Pretraining  9-th model>...[Epoch 55] Train acc: 73.2 (loss: 0.776), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining  9-th model>...[Epoch 56] Train acc: 72.1 (loss: 0.802), Val acc: 74.4, Time: 0.89 seconds
+<Pretraining  9-th model>...[Epoch 57] Train acc: 73.1 (loss: 0.780), Val acc: 74.4, Time: 0.84 seconds
+<Pretraining  9-th model>...[Epoch 58] Train acc: 72.7 (loss: 0.800), Val acc: 74.2, Time: 0.69 seconds
+<Pretraining  9-th model>...[Epoch 59] Train acc: 72.6 (loss: 0.797), Val acc: 74.4, Time: 0.86 seconds
+Model 9 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel9_trained.pth.tar
+Training model 11/20
+Model 10 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel10_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 10-th model>...[Epoch  0] Train acc: 65.9 (loss: 1.126), Val acc: 66.9, Time: 0.90 seconds
+<Pretraining 10-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.048), Val acc: 65.9, Time: 0.88 seconds
+<Pretraining 10-th model>...[Epoch  2] Train acc: 67.1 (loss: 1.022), Val acc: 68.3, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch  3] Train acc: 67.1 (loss: 0.999), Val acc: 70.2, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch  4] Train acc: 67.0 (loss: 1.000), Val acc: 68.7, Time: 0.88 seconds
+<Pretraining 10-th model>...[Epoch  5] Train acc: 67.6 (loss: 0.957), Val acc: 70.0, Time: 0.85 seconds
+<Pretraining 10-th model>...[Epoch  6] Train acc: 67.4 (loss: 0.975), Val acc: 69.8, Time: 0.70 seconds
+<Pretraining 10-th model>...[Epoch  7] Train acc: 68.0 (loss: 0.951), Val acc: 71.0, Time: 0.77 seconds
+<Pretraining 10-th model>...[Epoch  8] Train acc: 67.7 (loss: 0.954), Val acc: 70.1, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch  9] Train acc: 68.1 (loss: 0.939), Val acc: 71.5, Time: 0.88 seconds
+<Pretraining 10-th model>...[Epoch 10] Train acc: 68.1 (loss: 0.940), Val acc: 70.5, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 11] Train acc: 68.3 (loss: 0.942), Val acc: 71.2, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 12] Train acc: 68.9 (loss: 0.904), Val acc: 72.0, Time: 0.85 seconds
+<Pretraining 10-th model>...[Epoch 13] Train acc: 69.0 (loss: 0.919), Val acc: 73.0, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 14] Train acc: 69.0 (loss: 0.907), Val acc: 72.0, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 15] Train acc: 69.3 (loss: 0.910), Val acc: 72.0, Time: 0.65 seconds
+<Pretraining 10-th model>...[Epoch 16] Train acc: 68.6 (loss: 0.926), Val acc: 72.1, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 17] Train acc: 69.5 (loss: 0.887), Val acc: 72.4, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch 18] Train acc: 69.3 (loss: 0.901), Val acc: 72.1, Time: 0.85 seconds
+<Pretraining 10-th model>...[Epoch 19] Train acc: 69.7 (loss: 0.887), Val acc: 72.9, Time: 0.92 seconds
+<Pretraining 10-th model>...[Epoch 20] Train acc: 68.6 (loss: 0.921), Val acc: 72.5, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 21] Train acc: 69.9 (loss: 0.863), Val acc: 73.5, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch 22] Train acc: 69.7 (loss: 0.878), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 23] Train acc: 69.6 (loss: 0.881), Val acc: 72.1, Time: 0.78 seconds
+<Pretraining 10-th model>...[Epoch 24] Train acc: 70.2 (loss: 0.867), Val acc: 72.6, Time: 0.71 seconds
+<Pretraining 10-th model>...[Epoch 25] Train acc: 69.7 (loss: 0.877), Val acc: 72.4, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 26] Train acc: 69.3 (loss: 0.885), Val acc: 72.6, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch 27] Train acc: 70.6 (loss: 0.844), Val acc: 74.8, Time: 0.91 seconds
+<Pretraining 10-th model>...[Epoch 28] Train acc: 69.9 (loss: 0.886), Val acc: 71.5, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 29] Train acc: 70.1 (loss: 0.857), Val acc: 72.9, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 30] Train acc: 70.3 (loss: 0.858), Val acc: 73.4, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 31] Train acc: 70.9 (loss: 0.848), Val acc: 72.8, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch 32] Train acc: 70.4 (loss: 0.874), Val acc: 72.9, Time: 0.64 seconds
+<Pretraining 10-th model>...[Epoch 33] Train acc: 70.5 (loss: 0.866), Val acc: 72.1, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch 34] Train acc: 70.5 (loss: 0.851), Val acc: 72.9, Time: 0.85 seconds
+<Pretraining 10-th model>...[Epoch 35] Train acc: 70.2 (loss: 0.862), Val acc: 73.5, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 36] Train acc: 70.5 (loss: 0.858), Val acc: 73.9, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 37] Train acc: 71.8 (loss: 0.829), Val acc: 72.6, Time: 0.85 seconds
+<Pretraining 10-th model>...[Epoch 38] Train acc: 69.9 (loss: 0.864), Val acc: 74.3, Time: 0.92 seconds
+<Pretraining 10-th model>...[Epoch 39] Train acc: 71.3 (loss: 0.835), Val acc: 73.2, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 40] Train acc: 71.7 (loss: 0.826), Val acc: 73.9, Time: 0.83 seconds
+<Pretraining 10-th model>...[Epoch 41] Train acc: 72.2 (loss: 0.798), Val acc: 74.5, Time: 0.67 seconds
+<Pretraining 10-th model>...[Epoch 42] Train acc: 71.6 (loss: 0.813), Val acc: 73.9, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 43] Train acc: 72.2 (loss: 0.813), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining 10-th model>...[Epoch 44] Train acc: 71.5 (loss: 0.837), Val acc: 73.9, Time: 0.88 seconds
+<Pretraining 10-th model>...[Epoch 45] Train acc: 72.0 (loss: 0.811), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 46] Train acc: 71.7 (loss: 0.816), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 47] Train acc: 72.6 (loss: 0.779), Val acc: 74.7, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 48] Train acc: 72.4 (loss: 0.799), Val acc: 74.4, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch 49] Train acc: 72.2 (loss: 0.814), Val acc: 74.9, Time: 0.71 seconds
+<Pretraining 10-th model>...[Epoch 50] Train acc: 73.8 (loss: 0.777), Val acc: 75.0, Time: 0.77 seconds
+<Pretraining 10-th model>...[Epoch 51] Train acc: 73.3 (loss: 0.776), Val acc: 74.6, Time: 0.89 seconds
+<Pretraining 10-th model>...[Epoch 52] Train acc: 73.1 (loss: 0.778), Val acc: 74.7, Time: 0.86 seconds
+<Pretraining 10-th model>...[Epoch 53] Train acc: 73.7 (loss: 0.767), Val acc: 74.6, Time: 0.88 seconds
+<Pretraining 10-th model>...[Epoch 54] Train acc: 73.1 (loss: 0.793), Val acc: 74.7, Time: 0.88 seconds
+<Pretraining 10-th model>...[Epoch 55] Train acc: 72.4 (loss: 0.788), Val acc: 74.5, Time: 0.90 seconds
+<Pretraining 10-th model>...[Epoch 56] Train acc: 72.6 (loss: 0.788), Val acc: 74.8, Time: 0.87 seconds
+<Pretraining 10-th model>...[Epoch 57] Train acc: 73.9 (loss: 0.751), Val acc: 74.6, Time: 0.85 seconds
+<Pretraining 10-th model>...[Epoch 58] Train acc: 73.2 (loss: 0.772), Val acc: 74.7, Time: 0.63 seconds
+<Pretraining 10-th model>...[Epoch 59] Train acc: 72.7 (loss: 0.782), Val acc: 74.5, Time: 0.86 seconds
+Model 10 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel10_trained.pth.tar
+Training model 12/20
+Model 11 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel11_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 11-th model>...[Epoch  0] Train acc: 65.7 (loss: 1.142), Val acc: 66.9, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch  1] Train acc: 66.9 (loss: 1.067), Val acc: 59.6, Time: 0.90 seconds
+<Pretraining 11-th model>...[Epoch  2] Train acc: 67.1 (loss: 1.030), Val acc: 67.0, Time: 0.88 seconds
+<Pretraining 11-th model>...[Epoch  3] Train acc: 66.8 (loss: 1.018), Val acc: 68.0, Time: 0.89 seconds
+<Pretraining 11-th model>...[Epoch  4] Train acc: 67.2 (loss: 1.000), Val acc: 68.6, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.973), Val acc: 69.3, Time: 0.92 seconds
+<Pretraining 11-th model>...[Epoch  6] Train acc: 67.6 (loss: 0.984), Val acc: 70.0, Time: 0.74 seconds
+<Pretraining 11-th model>...[Epoch  7] Train acc: 67.9 (loss: 0.965), Val acc: 69.7, Time: 0.74 seconds
+<Pretraining 11-th model>...[Epoch  8] Train acc: 68.1 (loss: 0.949), Val acc: 69.9, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch  9] Train acc: 67.9 (loss: 0.946), Val acc: 69.9, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch 10] Train acc: 67.6 (loss: 0.966), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 11] Train acc: 68.1 (loss: 0.918), Val acc: 71.1, Time: 0.85 seconds
+<Pretraining 11-th model>...[Epoch 12] Train acc: 68.5 (loss: 0.912), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 13] Train acc: 68.8 (loss: 0.909), Val acc: 72.3, Time: 0.85 seconds
+<Pretraining 11-th model>...[Epoch 14] Train acc: 68.7 (loss: 0.927), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 15] Train acc: 69.4 (loss: 0.900), Val acc: 72.6, Time: 0.61 seconds
+<Pretraining 11-th model>...[Epoch 16] Train acc: 69.1 (loss: 0.909), Val acc: 71.8, Time: 0.85 seconds
+<Pretraining 11-th model>...[Epoch 17] Train acc: 69.1 (loss: 0.905), Val acc: 72.8, Time: 0.89 seconds
+<Pretraining 11-th model>...[Epoch 18] Train acc: 69.8 (loss: 0.888), Val acc: 71.2, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 19] Train acc: 69.4 (loss: 0.888), Val acc: 71.0, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch 20] Train acc: 69.3 (loss: 0.886), Val acc: 71.5, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 21] Train acc: 69.5 (loss: 0.900), Val acc: 72.8, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 22] Train acc: 69.2 (loss: 0.897), Val acc: 71.2, Time: 0.90 seconds
+<Pretraining 11-th model>...[Epoch 23] Train acc: 69.6 (loss: 0.876), Val acc: 73.1, Time: 0.83 seconds
+<Pretraining 11-th model>...[Epoch 24] Train acc: 69.7 (loss: 0.887), Val acc: 72.3, Time: 0.67 seconds
+<Pretraining 11-th model>...[Epoch 25] Train acc: 70.4 (loss: 0.869), Val acc: 72.5, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch 26] Train acc: 69.9 (loss: 0.890), Val acc: 71.7, Time: 0.92 seconds
+<Pretraining 11-th model>...[Epoch 27] Train acc: 70.0 (loss: 0.886), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 28] Train acc: 70.0 (loss: 0.864), Val acc: 72.7, Time: 0.90 seconds
+<Pretraining 11-th model>...[Epoch 29] Train acc: 69.7 (loss: 0.877), Val acc: 72.4, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 30] Train acc: 69.6 (loss: 0.884), Val acc: 73.8, Time: 0.90 seconds
+<Pretraining 11-th model>...[Epoch 31] Train acc: 70.4 (loss: 0.853), Val acc: 71.8, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 32] Train acc: 70.4 (loss: 0.856), Val acc: 73.7, Time: 0.69 seconds
+<Pretraining 11-th model>...[Epoch 33] Train acc: 70.5 (loss: 0.836), Val acc: 73.1, Time: 0.80 seconds
+<Pretraining 11-th model>...[Epoch 34] Train acc: 70.6 (loss: 0.863), Val acc: 71.5, Time: 0.89 seconds
+<Pretraining 11-th model>...[Epoch 35] Train acc: 69.7 (loss: 0.884), Val acc: 74.0, Time: 0.91 seconds
+<Pretraining 11-th model>...[Epoch 36] Train acc: 70.6 (loss: 0.866), Val acc: 73.1, Time: 0.89 seconds
+<Pretraining 11-th model>...[Epoch 37] Train acc: 70.7 (loss: 0.855), Val acc: 73.5, Time: 0.89 seconds
+<Pretraining 11-th model>...[Epoch 38] Train acc: 70.6 (loss: 0.840), Val acc: 74.3, Time: 0.88 seconds
+<Pretraining 11-th model>...[Epoch 39] Train acc: 71.0 (loss: 0.844), Val acc: 71.8, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 40] Train acc: 71.5 (loss: 0.830), Val acc: 72.8, Time: 0.82 seconds
+<Pretraining 11-th model>...[Epoch 41] Train acc: 71.5 (loss: 0.821), Val acc: 73.9, Time: 0.70 seconds
+<Pretraining 11-th model>...[Epoch 42] Train acc: 71.7 (loss: 0.819), Val acc: 73.2, Time: 0.88 seconds
+<Pretraining 11-th model>...[Epoch 43] Train acc: 72.5 (loss: 0.799), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 44] Train acc: 70.5 (loss: 0.853), Val acc: 73.0, Time: 0.88 seconds
+<Pretraining 11-th model>...[Epoch 45] Train acc: 72.1 (loss: 0.797), Val acc: 74.4, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch 46] Train acc: 73.3 (loss: 0.783), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch 47] Train acc: 72.2 (loss: 0.803), Val acc: 73.4, Time: 0.88 seconds
+<Pretraining 11-th model>...[Epoch 48] Train acc: 72.3 (loss: 0.802), Val acc: 73.8, Time: 0.89 seconds
+<Pretraining 11-th model>...[Epoch 49] Train acc: 72.3 (loss: 0.802), Val acc: 73.8, Time: 0.72 seconds
+<Pretraining 11-th model>...[Epoch 50] Train acc: 72.8 (loss: 0.784), Val acc: 73.3, Time: 0.76 seconds
+<Pretraining 11-th model>...[Epoch 51] Train acc: 73.1 (loss: 0.784), Val acc: 73.5, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch 52] Train acc: 73.2 (loss: 0.767), Val acc: 73.8, Time: 0.86 seconds
+<Pretraining 11-th model>...[Epoch 53] Train acc: 71.4 (loss: 0.828), Val acc: 73.8, Time: 0.92 seconds
+<Pretraining 11-th model>...[Epoch 54] Train acc: 72.0 (loss: 0.813), Val acc: 73.4, Time: 0.88 seconds
+<Pretraining 11-th model>...[Epoch 55] Train acc: 71.5 (loss: 0.822), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 56] Train acc: 73.4 (loss: 0.774), Val acc: 73.4, Time: 0.88 seconds
+<Pretraining 11-th model>...[Epoch 57] Train acc: 73.0 (loss: 0.786), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining 11-th model>...[Epoch 58] Train acc: 72.7 (loss: 0.797), Val acc: 73.7, Time: 0.67 seconds
+<Pretraining 11-th model>...[Epoch 59] Train acc: 72.4 (loss: 0.794), Val acc: 73.3, Time: 0.88 seconds
+Model 11 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel11_trained.pth.tar
+Training model 13/20
+Model 12 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel12_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 12-th model>...[Epoch  0] Train acc: 65.9 (loss: 1.127), Val acc: 66.9, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.054), Val acc: 65.6, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch  2] Train acc: 66.9 (loss: 1.013), Val acc: 68.7, Time: 0.86 seconds
+<Pretraining 12-th model>...[Epoch  3] Train acc: 67.4 (loss: 0.997), Val acc: 68.8, Time: 0.86 seconds
+<Pretraining 12-th model>...[Epoch  4] Train acc: 67.3 (loss: 0.985), Val acc: 69.0, Time: 0.92 seconds
+<Pretraining 12-th model>...[Epoch  5] Train acc: 67.6 (loss: 0.975), Val acc: 69.5, Time: 0.86 seconds
+<Pretraining 12-th model>...[Epoch  6] Train acc: 67.7 (loss: 0.966), Val acc: 68.9, Time: 0.73 seconds
+<Pretraining 12-th model>...[Epoch  7] Train acc: 67.8 (loss: 0.954), Val acc: 70.8, Time: 0.75 seconds
+<Pretraining 12-th model>...[Epoch  8] Train acc: 68.1 (loss: 0.955), Val acc: 69.5, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch  9] Train acc: 68.2 (loss: 0.919), Val acc: 71.4, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 10] Train acc: 68.3 (loss: 0.931), Val acc: 71.8, Time: 0.90 seconds
+<Pretraining 12-th model>...[Epoch 11] Train acc: 68.6 (loss: 0.914), Val acc: 72.8, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 12] Train acc: 68.6 (loss: 0.912), Val acc: 72.1, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 13] Train acc: 68.8 (loss: 0.918), Val acc: 71.7, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 14] Train acc: 68.1 (loss: 0.929), Val acc: 70.3, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 15] Train acc: 69.0 (loss: 0.904), Val acc: 71.1, Time: 0.66 seconds
+<Pretraining 12-th model>...[Epoch 16] Train acc: 69.0 (loss: 0.906), Val acc: 73.6, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 17] Train acc: 69.3 (loss: 0.895), Val acc: 72.7, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 18] Train acc: 69.2 (loss: 0.908), Val acc: 72.7, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 19] Train acc: 69.0 (loss: 0.908), Val acc: 73.1, Time: 0.90 seconds
+<Pretraining 12-th model>...[Epoch 20] Train acc: 69.3 (loss: 0.895), Val acc: 72.6, Time: 0.89 seconds
+<Pretraining 12-th model>...[Epoch 21] Train acc: 69.2 (loss: 0.901), Val acc: 72.3, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 22] Train acc: 69.6 (loss: 0.895), Val acc: 72.1, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 23] Train acc: 69.9 (loss: 0.876), Val acc: 72.5, Time: 0.80 seconds
+<Pretraining 12-th model>...[Epoch 24] Train acc: 69.6 (loss: 0.875), Val acc: 73.8, Time: 0.70 seconds
+<Pretraining 12-th model>...[Epoch 25] Train acc: 70.3 (loss: 0.859), Val acc: 73.3, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 26] Train acc: 70.1 (loss: 0.869), Val acc: 72.2, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 27] Train acc: 70.7 (loss: 0.848), Val acc: 74.4, Time: 0.86 seconds
+<Pretraining 12-th model>...[Epoch 28] Train acc: 70.1 (loss: 0.868), Val acc: 72.7, Time: 0.90 seconds
+<Pretraining 12-th model>...[Epoch 29] Train acc: 70.9 (loss: 0.853), Val acc: 72.2, Time: 0.86 seconds
+<Pretraining 12-th model>...[Epoch 30] Train acc: 69.8 (loss: 0.883), Val acc: 73.6, Time: 0.92 seconds
+<Pretraining 12-th model>...[Epoch 31] Train acc: 69.8 (loss: 0.882), Val acc: 73.2, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 32] Train acc: 70.4 (loss: 0.865), Val acc: 72.9, Time: 0.63 seconds
+<Pretraining 12-th model>...[Epoch 33] Train acc: 70.1 (loss: 0.868), Val acc: 71.3, Time: 0.85 seconds
+<Pretraining 12-th model>...[Epoch 34] Train acc: 71.4 (loss: 0.849), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 35] Train acc: 71.5 (loss: 0.844), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 36] Train acc: 70.8 (loss: 0.847), Val acc: 73.8, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 37] Train acc: 71.0 (loss: 0.857), Val acc: 72.3, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 38] Train acc: 70.7 (loss: 0.851), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining 12-th model>...[Epoch 39] Train acc: 70.5 (loss: 0.859), Val acc: 73.0, Time: 0.92 seconds
+<Pretraining 12-th model>...[Epoch 40] Train acc: 72.4 (loss: 0.794), Val acc: 74.5, Time: 0.80 seconds
+<Pretraining 12-th model>...[Epoch 41] Train acc: 71.9 (loss: 0.820), Val acc: 74.8, Time: 0.70 seconds
+<Pretraining 12-th model>...[Epoch 42] Train acc: 72.1 (loss: 0.793), Val acc: 74.8, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 43] Train acc: 71.6 (loss: 0.826), Val acc: 74.4, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 44] Train acc: 72.6 (loss: 0.816), Val acc: 73.7, Time: 0.89 seconds
+<Pretraining 12-th model>...[Epoch 45] Train acc: 72.2 (loss: 0.813), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 46] Train acc: 72.5 (loss: 0.793), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 47] Train acc: 73.3 (loss: 0.777), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 48] Train acc: 72.1 (loss: 0.802), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 49] Train acc: 72.8 (loss: 0.798), Val acc: 74.8, Time: 0.72 seconds
+<Pretraining 12-th model>...[Epoch 50] Train acc: 71.9 (loss: 0.808), Val acc: 74.5, Time: 0.78 seconds
+<Pretraining 12-th model>...[Epoch 51] Train acc: 72.6 (loss: 0.799), Val acc: 74.6, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 52] Train acc: 72.8 (loss: 0.796), Val acc: 74.7, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 53] Train acc: 72.7 (loss: 0.797), Val acc: 74.6, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 54] Train acc: 73.5 (loss: 0.770), Val acc: 74.6, Time: 0.85 seconds
+<Pretraining 12-th model>...[Epoch 55] Train acc: 72.6 (loss: 0.776), Val acc: 74.8, Time: 0.86 seconds
+<Pretraining 12-th model>...[Epoch 56] Train acc: 72.6 (loss: 0.801), Val acc: 74.7, Time: 0.88 seconds
+<Pretraining 12-th model>...[Epoch 57] Train acc: 72.2 (loss: 0.808), Val acc: 74.8, Time: 0.87 seconds
+<Pretraining 12-th model>...[Epoch 58] Train acc: 74.0 (loss: 0.756), Val acc: 74.7, Time: 0.63 seconds
+<Pretraining 12-th model>...[Epoch 59] Train acc: 72.5 (loss: 0.805), Val acc: 74.5, Time: 0.88 seconds
+Model 12 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel12_trained.pth.tar
+Training model 14/20
+Model 13 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel13_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 13-th model>...[Epoch  0] Train acc: 65.8 (loss: 1.141), Val acc: 66.9, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.055), Val acc: 67.3, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch  2] Train acc: 67.2 (loss: 1.027), Val acc: 68.4, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch  3] Train acc: 67.0 (loss: 1.011), Val acc: 69.4, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch  4] Train acc: 67.3 (loss: 0.987), Val acc: 70.1, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch  5] Train acc: 68.1 (loss: 0.959), Val acc: 70.5, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch  6] Train acc: 67.6 (loss: 0.973), Val acc: 69.3, Time: 0.72 seconds
+<Pretraining 13-th model>...[Epoch  7] Train acc: 67.8 (loss: 0.948), Val acc: 70.6, Time: 0.79 seconds
+<Pretraining 13-th model>...[Epoch  8] Train acc: 67.9 (loss: 0.965), Val acc: 70.6, Time: 0.90 seconds
+<Pretraining 13-th model>...[Epoch  9] Train acc: 68.7 (loss: 0.919), Val acc: 71.3, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 10] Train acc: 68.7 (loss: 0.911), Val acc: 71.1, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 11] Train acc: 68.4 (loss: 0.920), Val acc: 72.5, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 12] Train acc: 69.0 (loss: 0.904), Val acc: 73.1, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 13] Train acc: 69.2 (loss: 0.905), Val acc: 71.3, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 14] Train acc: 68.6 (loss: 0.923), Val acc: 71.0, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 15] Train acc: 69.3 (loss: 0.899), Val acc: 70.3, Time: 0.62 seconds
+<Pretraining 13-th model>...[Epoch 16] Train acc: 69.3 (loss: 0.895), Val acc: 71.5, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch 17] Train acc: 68.5 (loss: 0.912), Val acc: 72.2, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 18] Train acc: 68.7 (loss: 0.912), Val acc: 72.3, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 19] Train acc: 69.5 (loss: 0.889), Val acc: 71.3, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 20] Train acc: 69.3 (loss: 0.901), Val acc: 71.5, Time: 0.90 seconds
+<Pretraining 13-th model>...[Epoch 21] Train acc: 69.6 (loss: 0.887), Val acc: 72.4, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch 22] Train acc: 69.4 (loss: 0.887), Val acc: 72.0, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch 23] Train acc: 69.5 (loss: 0.877), Val acc: 72.9, Time: 0.74 seconds
+<Pretraining 13-th model>...[Epoch 24] Train acc: 70.3 (loss: 0.862), Val acc: 72.9, Time: 0.76 seconds
+<Pretraining 13-th model>...[Epoch 25] Train acc: 70.6 (loss: 0.867), Val acc: 71.1, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 26] Train acc: 70.0 (loss: 0.865), Val acc: 70.7, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 27] Train acc: 70.5 (loss: 0.867), Val acc: 72.8, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 28] Train acc: 70.0 (loss: 0.887), Val acc: 71.6, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 29] Train acc: 70.3 (loss: 0.863), Val acc: 72.2, Time: 0.86 seconds
+<Pretraining 13-th model>...[Epoch 30] Train acc: 69.9 (loss: 0.882), Val acc: 73.0, Time: 0.90 seconds
+<Pretraining 13-th model>...[Epoch 31] Train acc: 70.4 (loss: 0.861), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 32] Train acc: 69.6 (loss: 0.886), Val acc: 73.3, Time: 0.63 seconds
+<Pretraining 13-th model>...[Epoch 33] Train acc: 70.8 (loss: 0.843), Val acc: 72.6, Time: 0.86 seconds
+<Pretraining 13-th model>...[Epoch 34] Train acc: 70.5 (loss: 0.853), Val acc: 71.5, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 35] Train acc: 71.1 (loss: 0.842), Val acc: 74.2, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 36] Train acc: 70.9 (loss: 0.851), Val acc: 73.0, Time: 0.84 seconds
+<Pretraining 13-th model>...[Epoch 37] Train acc: 71.4 (loss: 0.847), Val acc: 72.3, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 38] Train acc: 71.3 (loss: 0.836), Val acc: 73.1, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 39] Train acc: 71.0 (loss: 0.844), Val acc: 71.8, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 40] Train acc: 71.8 (loss: 0.804), Val acc: 74.2, Time: 0.82 seconds
+<Pretraining 13-th model>...[Epoch 41] Train acc: 73.0 (loss: 0.779), Val acc: 73.9, Time: 0.67 seconds
+<Pretraining 13-th model>...[Epoch 42] Train acc: 71.6 (loss: 0.816), Val acc: 73.6, Time: 0.91 seconds
+<Pretraining 13-th model>...[Epoch 43] Train acc: 71.7 (loss: 0.810), Val acc: 73.4, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 44] Train acc: 72.2 (loss: 0.811), Val acc: 74.0, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 45] Train acc: 72.3 (loss: 0.811), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 46] Train acc: 72.0 (loss: 0.827), Val acc: 74.6, Time: 0.91 seconds
+<Pretraining 13-th model>...[Epoch 47] Train acc: 72.6 (loss: 0.799), Val acc: 74.2, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch 48] Train acc: 72.4 (loss: 0.802), Val acc: 74.3, Time: 0.88 seconds
+<Pretraining 13-th model>...[Epoch 49] Train acc: 71.8 (loss: 0.816), Val acc: 74.4, Time: 0.68 seconds
+<Pretraining 13-th model>...[Epoch 50] Train acc: 73.3 (loss: 0.766), Val acc: 74.2, Time: 0.76 seconds
+<Pretraining 13-th model>...[Epoch 51] Train acc: 72.8 (loss: 0.791), Val acc: 74.4, Time: 0.86 seconds
+<Pretraining 13-th model>...[Epoch 52] Train acc: 73.1 (loss: 0.779), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 53] Train acc: 73.2 (loss: 0.783), Val acc: 74.1, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch 54] Train acc: 72.5 (loss: 0.797), Val acc: 74.3, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch 55] Train acc: 72.0 (loss: 0.798), Val acc: 74.1, Time: 0.89 seconds
+<Pretraining 13-th model>...[Epoch 56] Train acc: 72.7 (loss: 0.790), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining 13-th model>...[Epoch 57] Train acc: 73.4 (loss: 0.773), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining 13-th model>...[Epoch 58] Train acc: 73.3 (loss: 0.766), Val acc: 74.4, Time: 0.66 seconds
+<Pretraining 13-th model>...[Epoch 59] Train acc: 72.0 (loss: 0.804), Val acc: 74.2, Time: 0.88 seconds
+Model 13 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel13_trained.pth.tar
+Training model 15/20
+Model 14 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel14_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 14-th model>...[Epoch  0] Train acc: 66.5 (loss: 1.118), Val acc: 66.9, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch  1] Train acc: 66.9 (loss: 1.055), Val acc: 66.8, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch  2] Train acc: 67.0 (loss: 1.020), Val acc: 68.4, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch  3] Train acc: 66.7 (loss: 1.020), Val acc: 69.9, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch  4] Train acc: 67.5 (loss: 0.972), Val acc: 66.7, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.964), Val acc: 71.4, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch  6] Train acc: 67.6 (loss: 0.961), Val acc: 69.4, Time: 0.81 seconds
+<Pretraining 14-th model>...[Epoch  7] Train acc: 68.0 (loss: 0.939), Val acc: 70.6, Time: 0.69 seconds
+<Pretraining 14-th model>...[Epoch  8] Train acc: 68.0 (loss: 0.955), Val acc: 70.5, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch  9] Train acc: 68.3 (loss: 0.936), Val acc: 71.4, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch 10] Train acc: 68.5 (loss: 0.932), Val acc: 72.7, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 11] Train acc: 68.9 (loss: 0.913), Val acc: 71.8, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 12] Train acc: 69.3 (loss: 0.918), Val acc: 72.4, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 13] Train acc: 68.8 (loss: 0.919), Val acc: 72.1, Time: 0.91 seconds
+<Pretraining 14-th model>...[Epoch 14] Train acc: 68.5 (loss: 0.931), Val acc: 72.6, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 15] Train acc: 69.0 (loss: 0.916), Val acc: 72.3, Time: 0.65 seconds
+<Pretraining 14-th model>...[Epoch 16] Train acc: 68.9 (loss: 0.917), Val acc: 71.8, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch 17] Train acc: 69.5 (loss: 0.891), Val acc: 72.2, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch 18] Train acc: 69.3 (loss: 0.894), Val acc: 71.7, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch 19] Train acc: 69.3 (loss: 0.900), Val acc: 72.5, Time: 0.90 seconds
+<Pretraining 14-th model>...[Epoch 20] Train acc: 69.0 (loss: 0.892), Val acc: 73.4, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch 21] Train acc: 69.3 (loss: 0.891), Val acc: 73.3, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch 22] Train acc: 69.6 (loss: 0.881), Val acc: 72.7, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch 23] Train acc: 69.1 (loss: 0.901), Val acc: 72.2, Time: 0.85 seconds
+<Pretraining 14-th model>...[Epoch 24] Train acc: 69.6 (loss: 0.867), Val acc: 72.3, Time: 0.68 seconds
+<Pretraining 14-th model>...[Epoch 25] Train acc: 69.4 (loss: 0.892), Val acc: 72.0, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 26] Train acc: 70.3 (loss: 0.873), Val acc: 71.8, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 27] Train acc: 70.0 (loss: 0.872), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 28] Train acc: 70.5 (loss: 0.854), Val acc: 73.5, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 29] Train acc: 69.7 (loss: 0.893), Val acc: 73.4, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 30] Train acc: 70.1 (loss: 0.864), Val acc: 73.6, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 31] Train acc: 70.7 (loss: 0.870), Val acc: 73.0, Time: 0.90 seconds
+<Pretraining 14-th model>...[Epoch 32] Train acc: 70.4 (loss: 0.868), Val acc: 73.2, Time: 0.64 seconds
+<Pretraining 14-th model>...[Epoch 33] Train acc: 70.3 (loss: 0.865), Val acc: 72.7, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch 34] Train acc: 71.0 (loss: 0.850), Val acc: 74.0, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch 35] Train acc: 71.2 (loss: 0.843), Val acc: 75.2, Time: 0.90 seconds
+<Pretraining 14-th model>...[Epoch 36] Train acc: 70.6 (loss: 0.857), Val acc: 73.8, Time: 0.90 seconds
+<Pretraining 14-th model>...[Epoch 37] Train acc: 70.2 (loss: 0.858), Val acc: 73.3, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 38] Train acc: 71.7 (loss: 0.836), Val acc: 74.9, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 39] Train acc: 71.3 (loss: 0.833), Val acc: 73.3, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 40] Train acc: 71.4 (loss: 0.830), Val acc: 74.0, Time: 0.83 seconds
+<Pretraining 14-th model>...[Epoch 41] Train acc: 72.0 (loss: 0.811), Val acc: 74.8, Time: 0.68 seconds
+<Pretraining 14-th model>...[Epoch 42] Train acc: 70.7 (loss: 0.839), Val acc: 74.6, Time: 0.91 seconds
+<Pretraining 14-th model>...[Epoch 43] Train acc: 72.6 (loss: 0.802), Val acc: 74.0, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 44] Train acc: 72.9 (loss: 0.800), Val acc: 74.1, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch 45] Train acc: 72.7 (loss: 0.802), Val acc: 74.6, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch 46] Train acc: 72.4 (loss: 0.811), Val acc: 74.5, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 47] Train acc: 72.3 (loss: 0.811), Val acc: 74.5, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 48] Train acc: 72.8 (loss: 0.793), Val acc: 74.7, Time: 0.91 seconds
+<Pretraining 14-th model>...[Epoch 49] Train acc: 72.4 (loss: 0.808), Val acc: 74.7, Time: 0.67 seconds
+<Pretraining 14-th model>...[Epoch 50] Train acc: 72.8 (loss: 0.798), Val acc: 74.5, Time: 0.80 seconds
+<Pretraining 14-th model>...[Epoch 51] Train acc: 72.7 (loss: 0.802), Val acc: 74.6, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 52] Train acc: 72.8 (loss: 0.793), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining 14-th model>...[Epoch 53] Train acc: 73.4 (loss: 0.783), Val acc: 74.5, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 54] Train acc: 72.8 (loss: 0.783), Val acc: 74.3, Time: 0.89 seconds
+<Pretraining 14-th model>...[Epoch 55] Train acc: 73.6 (loss: 0.769), Val acc: 74.5, Time: 0.85 seconds
+<Pretraining 14-th model>...[Epoch 56] Train acc: 73.3 (loss: 0.779), Val acc: 74.6, Time: 0.88 seconds
+<Pretraining 14-th model>...[Epoch 57] Train acc: 73.4 (loss: 0.764), Val acc: 74.6, Time: 0.86 seconds
+<Pretraining 14-th model>...[Epoch 58] Train acc: 73.6 (loss: 0.771), Val acc: 74.4, Time: 0.64 seconds
+<Pretraining 14-th model>...[Epoch 59] Train acc: 73.9 (loss: 0.770), Val acc: 74.6, Time: 0.89 seconds
+Model 14 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel14_trained.pth.tar
+Training model 16/20
+Model 15 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel15_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 15-th model>...[Epoch  0] Train acc: 66.2 (loss: 1.116), Val acc: 67.0, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch  1] Train acc: 67.1 (loss: 1.045), Val acc: 64.0, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch  2] Train acc: 66.8 (loss: 1.019), Val acc: 68.1, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch  3] Train acc: 67.2 (loss: 1.005), Val acc: 68.8, Time: 0.89 seconds
+<Pretraining 15-th model>...[Epoch  4] Train acc: 67.1 (loss: 0.990), Val acc: 68.6, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch  5] Train acc: 67.6 (loss: 0.965), Val acc: 70.7, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch  6] Train acc: 67.8 (loss: 0.954), Val acc: 69.9, Time: 0.74 seconds
+<Pretraining 15-th model>...[Epoch  7] Train acc: 68.0 (loss: 0.953), Val acc: 70.2, Time: 0.77 seconds
+<Pretraining 15-th model>...[Epoch  8] Train acc: 68.0 (loss: 0.965), Val acc: 69.1, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch  9] Train acc: 68.2 (loss: 0.943), Val acc: 70.6, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 10] Train acc: 68.2 (loss: 0.936), Val acc: 73.2, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 11] Train acc: 68.8 (loss: 0.907), Val acc: 72.1, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 12] Train acc: 68.0 (loss: 0.929), Val acc: 72.7, Time: 0.89 seconds
+<Pretraining 15-th model>...[Epoch 13] Train acc: 69.0 (loss: 0.901), Val acc: 72.8, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 14] Train acc: 69.1 (loss: 0.901), Val acc: 70.6, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 15] Train acc: 69.3 (loss: 0.903), Val acc: 71.0, Time: 0.63 seconds
+<Pretraining 15-th model>...[Epoch 16] Train acc: 69.1 (loss: 0.909), Val acc: 72.2, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 17] Train acc: 69.0 (loss: 0.901), Val acc: 71.0, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 18] Train acc: 68.6 (loss: 0.911), Val acc: 71.7, Time: 0.90 seconds
+<Pretraining 15-th model>...[Epoch 19] Train acc: 69.3 (loss: 0.893), Val acc: 72.0, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 20] Train acc: 69.6 (loss: 0.887), Val acc: 73.1, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 21] Train acc: 70.3 (loss: 0.874), Val acc: 72.7, Time: 0.89 seconds
+<Pretraining 15-th model>...[Epoch 22] Train acc: 69.7 (loss: 0.892), Val acc: 71.6, Time: 0.89 seconds
+<Pretraining 15-th model>...[Epoch 23] Train acc: 69.6 (loss: 0.882), Val acc: 72.3, Time: 0.80 seconds
+<Pretraining 15-th model>...[Epoch 24] Train acc: 69.8 (loss: 0.880), Val acc: 73.0, Time: 0.69 seconds
+<Pretraining 15-th model>...[Epoch 25] Train acc: 70.0 (loss: 0.874), Val acc: 71.7, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 26] Train acc: 69.9 (loss: 0.882), Val acc: 70.6, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 27] Train acc: 69.8 (loss: 0.873), Val acc: 72.8, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 28] Train acc: 70.2 (loss: 0.863), Val acc: 72.0, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 29] Train acc: 69.3 (loss: 0.885), Val acc: 72.5, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 30] Train acc: 70.8 (loss: 0.848), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 31] Train acc: 70.7 (loss: 0.863), Val acc: 73.8, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 32] Train acc: 70.3 (loss: 0.870), Val acc: 73.5, Time: 0.63 seconds
+<Pretraining 15-th model>...[Epoch 33] Train acc: 71.3 (loss: 0.835), Val acc: 72.8, Time: 0.83 seconds
+<Pretraining 15-th model>...[Epoch 34] Train acc: 70.6 (loss: 0.855), Val acc: 72.1, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 35] Train acc: 71.1 (loss: 0.839), Val acc: 74.7, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 36] Train acc: 70.5 (loss: 0.873), Val acc: 73.7, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 37] Train acc: 70.8 (loss: 0.845), Val acc: 73.3, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 38] Train acc: 70.5 (loss: 0.862), Val acc: 74.0, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 39] Train acc: 71.2 (loss: 0.846), Val acc: 73.1, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 40] Train acc: 70.6 (loss: 0.852), Val acc: 74.0, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 41] Train acc: 71.6 (loss: 0.809), Val acc: 74.3, Time: 0.63 seconds
+<Pretraining 15-th model>...[Epoch 42] Train acc: 71.8 (loss: 0.802), Val acc: 74.2, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 43] Train acc: 72.1 (loss: 0.812), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 44] Train acc: 72.4 (loss: 0.806), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 45] Train acc: 73.1 (loss: 0.784), Val acc: 74.3, Time: 0.85 seconds
+<Pretraining 15-th model>...[Epoch 46] Train acc: 71.7 (loss: 0.822), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 47] Train acc: 72.7 (loss: 0.793), Val acc: 74.4, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 48] Train acc: 72.2 (loss: 0.812), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 49] Train acc: 73.0 (loss: 0.786), Val acc: 74.2, Time: 0.80 seconds
+<Pretraining 15-th model>...[Epoch 50] Train acc: 73.1 (loss: 0.784), Val acc: 74.4, Time: 0.69 seconds
+<Pretraining 15-th model>...[Epoch 51] Train acc: 73.0 (loss: 0.789), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 52] Train acc: 72.7 (loss: 0.806), Val acc: 74.4, Time: 0.89 seconds
+<Pretraining 15-th model>...[Epoch 53] Train acc: 73.1 (loss: 0.786), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 54] Train acc: 73.2 (loss: 0.778), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 55] Train acc: 73.9 (loss: 0.756), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining 15-th model>...[Epoch 56] Train acc: 73.9 (loss: 0.754), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining 15-th model>...[Epoch 57] Train acc: 72.9 (loss: 0.782), Val acc: 74.4, Time: 0.88 seconds
+<Pretraining 15-th model>...[Epoch 58] Train acc: 72.7 (loss: 0.786), Val acc: 74.6, Time: 0.69 seconds
+<Pretraining 15-th model>...[Epoch 59] Train acc: 72.9 (loss: 0.787), Val acc: 74.3, Time: 0.83 seconds
+Model 15 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel15_trained.pth.tar
+Training model 17/20
+Model 16 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel16_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 16-th model>...[Epoch  0] Train acc: 65.9 (loss: 1.130), Val acc: 66.9, Time: 0.90 seconds
+<Pretraining 16-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.042), Val acc: 68.7, Time: 0.90 seconds
+<Pretraining 16-th model>...[Epoch  2] Train acc: 66.9 (loss: 1.013), Val acc: 69.4, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch  3] Train acc: 67.2 (loss: 1.004), Val acc: 69.8, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch  4] Train acc: 67.1 (loss: 0.990), Val acc: 68.4, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch  5] Train acc: 66.9 (loss: 0.981), Val acc: 70.0, Time: 0.89 seconds
+<Pretraining 16-th model>...[Epoch  6] Train acc: 67.6 (loss: 0.954), Val acc: 70.2, Time: 0.84 seconds
+<Pretraining 16-th model>...[Epoch  7] Train acc: 67.8 (loss: 0.946), Val acc: 70.0, Time: 0.66 seconds
+<Pretraining 16-th model>...[Epoch  8] Train acc: 68.0 (loss: 0.941), Val acc: 70.5, Time: 0.91 seconds
+<Pretraining 16-th model>...[Epoch  9] Train acc: 68.4 (loss: 0.934), Val acc: 71.0, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 10] Train acc: 68.4 (loss: 0.923), Val acc: 72.1, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 11] Train acc: 68.4 (loss: 0.922), Val acc: 72.6, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 12] Train acc: 69.0 (loss: 0.900), Val acc: 73.1, Time: 0.89 seconds
+<Pretraining 16-th model>...[Epoch 13] Train acc: 68.7 (loss: 0.911), Val acc: 73.5, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 14] Train acc: 69.0 (loss: 0.909), Val acc: 71.6, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 15] Train acc: 69.8 (loss: 0.888), Val acc: 72.8, Time: 0.67 seconds
+<Pretraining 16-th model>...[Epoch 16] Train acc: 69.4 (loss: 0.888), Val acc: 72.7, Time: 0.81 seconds
+<Pretraining 16-th model>...[Epoch 17] Train acc: 69.7 (loss: 0.894), Val acc: 72.5, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 18] Train acc: 69.7 (loss: 0.881), Val acc: 70.9, Time: 0.85 seconds
+<Pretraining 16-th model>...[Epoch 19] Train acc: 69.6 (loss: 0.884), Val acc: 72.2, Time: 0.90 seconds
+<Pretraining 16-th model>...[Epoch 20] Train acc: 70.0 (loss: 0.862), Val acc: 73.0, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 21] Train acc: 70.2 (loss: 0.861), Val acc: 72.3, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 22] Train acc: 68.8 (loss: 0.902), Val acc: 72.0, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 23] Train acc: 69.4 (loss: 0.901), Val acc: 73.0, Time: 0.86 seconds
+<Pretraining 16-th model>...[Epoch 24] Train acc: 70.3 (loss: 0.849), Val acc: 73.8, Time: 0.71 seconds
+<Pretraining 16-th model>...[Epoch 25] Train acc: 70.6 (loss: 0.859), Val acc: 72.6, Time: 0.89 seconds
+<Pretraining 16-th model>...[Epoch 26] Train acc: 70.0 (loss: 0.860), Val acc: 71.6, Time: 0.85 seconds
+<Pretraining 16-th model>...[Epoch 27] Train acc: 69.5 (loss: 0.874), Val acc: 73.7, Time: 0.90 seconds
+<Pretraining 16-th model>...[Epoch 28] Train acc: 70.5 (loss: 0.873), Val acc: 72.6, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 29] Train acc: 70.2 (loss: 0.865), Val acc: 72.1, Time: 0.91 seconds
+<Pretraining 16-th model>...[Epoch 30] Train acc: 70.4 (loss: 0.854), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 31] Train acc: 71.3 (loss: 0.843), Val acc: 71.9, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 32] Train acc: 70.4 (loss: 0.878), Val acc: 73.8, Time: 0.70 seconds
+<Pretraining 16-th model>...[Epoch 33] Train acc: 71.2 (loss: 0.847), Val acc: 73.0, Time: 0.77 seconds
+<Pretraining 16-th model>...[Epoch 34] Train acc: 71.0 (loss: 0.840), Val acc: 72.0, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 35] Train acc: 70.9 (loss: 0.857), Val acc: 74.3, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 36] Train acc: 70.2 (loss: 0.866), Val acc: 74.7, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 37] Train acc: 71.5 (loss: 0.823), Val acc: 73.9, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 38] Train acc: 71.2 (loss: 0.850), Val acc: 73.7, Time: 0.89 seconds
+<Pretraining 16-th model>...[Epoch 39] Train acc: 71.3 (loss: 0.831), Val acc: 72.8, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 40] Train acc: 71.9 (loss: 0.809), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining 16-th model>...[Epoch 41] Train acc: 72.2 (loss: 0.808), Val acc: 75.0, Time: 0.68 seconds
+<Pretraining 16-th model>...[Epoch 42] Train acc: 71.9 (loss: 0.823), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 43] Train acc: 72.2 (loss: 0.795), Val acc: 75.2, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 44] Train acc: 72.4 (loss: 0.801), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 45] Train acc: 73.4 (loss: 0.778), Val acc: 75.4, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 46] Train acc: 73.0 (loss: 0.797), Val acc: 74.1, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 47] Train acc: 73.2 (loss: 0.791), Val acc: 74.5, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 48] Train acc: 71.9 (loss: 0.802), Val acc: 74.4, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 49] Train acc: 72.5 (loss: 0.793), Val acc: 74.2, Time: 0.76 seconds
+<Pretraining 16-th model>...[Epoch 50] Train acc: 73.4 (loss: 0.785), Val acc: 74.2, Time: 0.71 seconds
+<Pretraining 16-th model>...[Epoch 51] Train acc: 73.0 (loss: 0.801), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 52] Train acc: 72.4 (loss: 0.789), Val acc: 74.4, Time: 0.89 seconds
+<Pretraining 16-th model>...[Epoch 53] Train acc: 72.6 (loss: 0.795), Val acc: 73.9, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 54] Train acc: 73.0 (loss: 0.788), Val acc: 74.5, Time: 0.88 seconds
+<Pretraining 16-th model>...[Epoch 55] Train acc: 73.3 (loss: 0.788), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining 16-th model>...[Epoch 56] Train acc: 72.2 (loss: 0.802), Val acc: 74.4, Time: 0.91 seconds
+<Pretraining 16-th model>...[Epoch 57] Train acc: 72.7 (loss: 0.791), Val acc: 74.2, Time: 0.89 seconds
+<Pretraining 16-th model>...[Epoch 58] Train acc: 73.0 (loss: 0.795), Val acc: 74.0, Time: 0.65 seconds
+<Pretraining 16-th model>...[Epoch 59] Train acc: 73.0 (loss: 0.783), Val acc: 73.9, Time: 0.89 seconds
+Model 16 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel16_trained.pth.tar
+Training model 18/20
+Model 17 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel17_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 17-th model>...[Epoch  0] Train acc: 66.3 (loss: 1.125), Val acc: 66.9, Time: 0.89 seconds
+<Pretraining 17-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.046), Val acc: 66.0, Time: 0.89 seconds
+<Pretraining 17-th model>...[Epoch  2] Train acc: 67.1 (loss: 1.021), Val acc: 68.2, Time: 0.90 seconds
+<Pretraining 17-th model>...[Epoch  3] Train acc: 67.1 (loss: 0.996), Val acc: 70.1, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch  4] Train acc: 67.5 (loss: 0.989), Val acc: 69.2, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch  5] Train acc: 67.3 (loss: 0.971), Val acc: 70.3, Time: 0.90 seconds
+<Pretraining 17-th model>...[Epoch  6] Train acc: 67.8 (loss: 0.946), Val acc: 70.0, Time: 0.77 seconds
+<Pretraining 17-th model>...[Epoch  7] Train acc: 67.4 (loss: 0.965), Val acc: 71.1, Time: 0.71 seconds
+<Pretraining 17-th model>...[Epoch  8] Train acc: 68.1 (loss: 0.957), Val acc: 69.5, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch  9] Train acc: 68.6 (loss: 0.924), Val acc: 70.2, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 10] Train acc: 68.4 (loss: 0.934), Val acc: 71.6, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 11] Train acc: 68.6 (loss: 0.925), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 12] Train acc: 69.3 (loss: 0.886), Val acc: 72.3, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 13] Train acc: 68.5 (loss: 0.906), Val acc: 71.7, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 14] Train acc: 69.1 (loss: 0.909), Val acc: 71.1, Time: 0.89 seconds
+<Pretraining 17-th model>...[Epoch 15] Train acc: 68.5 (loss: 0.925), Val acc: 71.8, Time: 0.64 seconds
+<Pretraining 17-th model>...[Epoch 16] Train acc: 69.2 (loss: 0.909), Val acc: 72.0, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 17] Train acc: 69.6 (loss: 0.900), Val acc: 71.6, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 18] Train acc: 69.5 (loss: 0.890), Val acc: 72.0, Time: 0.90 seconds
+<Pretraining 17-th model>...[Epoch 19] Train acc: 69.5 (loss: 0.892), Val acc: 73.2, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 20] Train acc: 69.2 (loss: 0.893), Val acc: 71.3, Time: 0.85 seconds
+<Pretraining 17-th model>...[Epoch 21] Train acc: 69.3 (loss: 0.891), Val acc: 72.2, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 22] Train acc: 70.0 (loss: 0.870), Val acc: 72.5, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 23] Train acc: 69.4 (loss: 0.901), Val acc: 72.1, Time: 0.85 seconds
+<Pretraining 17-th model>...[Epoch 24] Train acc: 69.8 (loss: 0.867), Val acc: 71.5, Time: 0.66 seconds
+<Pretraining 17-th model>...[Epoch 25] Train acc: 70.4 (loss: 0.861), Val acc: 72.5, Time: 0.89 seconds
+<Pretraining 17-th model>...[Epoch 26] Train acc: 70.1 (loss: 0.880), Val acc: 71.4, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 27] Train acc: 70.3 (loss: 0.856), Val acc: 73.2, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 28] Train acc: 70.2 (loss: 0.867), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 29] Train acc: 69.7 (loss: 0.874), Val acc: 73.2, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 30] Train acc: 70.7 (loss: 0.859), Val acc: 74.2, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 31] Train acc: 71.1 (loss: 0.849), Val acc: 73.0, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 32] Train acc: 70.5 (loss: 0.856), Val acc: 73.5, Time: 0.69 seconds
+<Pretraining 17-th model>...[Epoch 33] Train acc: 69.8 (loss: 0.858), Val acc: 72.9, Time: 0.84 seconds
+<Pretraining 17-th model>...[Epoch 34] Train acc: 70.7 (loss: 0.864), Val acc: 72.5, Time: 0.89 seconds
+<Pretraining 17-th model>...[Epoch 35] Train acc: 70.8 (loss: 0.858), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 36] Train acc: 70.7 (loss: 0.837), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 37] Train acc: 70.4 (loss: 0.852), Val acc: 72.3, Time: 0.90 seconds
+<Pretraining 17-th model>...[Epoch 38] Train acc: 70.3 (loss: 0.855), Val acc: 74.1, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 39] Train acc: 70.4 (loss: 0.849), Val acc: 73.0, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 40] Train acc: 71.5 (loss: 0.840), Val acc: 73.7, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 41] Train acc: 71.7 (loss: 0.823), Val acc: 73.7, Time: 0.66 seconds
+<Pretraining 17-th model>...[Epoch 42] Train acc: 72.3 (loss: 0.799), Val acc: 73.7, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 43] Train acc: 72.6 (loss: 0.802), Val acc: 73.8, Time: 0.85 seconds
+<Pretraining 17-th model>...[Epoch 44] Train acc: 72.3 (loss: 0.807), Val acc: 73.8, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 45] Train acc: 71.2 (loss: 0.831), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining 17-th model>...[Epoch 46] Train acc: 71.2 (loss: 0.824), Val acc: 74.1, Time: 0.89 seconds
+<Pretraining 17-th model>...[Epoch 47] Train acc: 72.4 (loss: 0.799), Val acc: 74.5, Time: 0.90 seconds
+<Pretraining 17-th model>...[Epoch 48] Train acc: 73.0 (loss: 0.798), Val acc: 73.4, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 49] Train acc: 72.7 (loss: 0.787), Val acc: 74.4, Time: 0.69 seconds
+<Pretraining 17-th model>...[Epoch 50] Train acc: 72.9 (loss: 0.804), Val acc: 74.2, Time: 0.82 seconds
+<Pretraining 17-th model>...[Epoch 51] Train acc: 71.6 (loss: 0.810), Val acc: 73.7, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 52] Train acc: 72.5 (loss: 0.784), Val acc: 74.2, Time: 0.90 seconds
+<Pretraining 17-th model>...[Epoch 53] Train acc: 73.4 (loss: 0.782), Val acc: 73.9, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 54] Train acc: 72.8 (loss: 0.786), Val acc: 73.8, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 55] Train acc: 73.0 (loss: 0.789), Val acc: 74.2, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 56] Train acc: 73.3 (loss: 0.771), Val acc: 73.7, Time: 0.88 seconds
+<Pretraining 17-th model>...[Epoch 57] Train acc: 72.9 (loss: 0.789), Val acc: 74.3, Time: 0.86 seconds
+<Pretraining 17-th model>...[Epoch 58] Train acc: 73.4 (loss: 0.772), Val acc: 73.8, Time: 0.66 seconds
+<Pretraining 17-th model>...[Epoch 59] Train acc: 72.2 (loss: 0.809), Val acc: 73.6, Time: 0.90 seconds
+Model 17 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel17_trained.pth.tar
+Training model 19/20
+Model 18 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel18_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 18-th model>...[Epoch  0] Train acc: 66.2 (loss: 1.121), Val acc: 67.0, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch  1] Train acc: 67.1 (loss: 1.053), Val acc: 61.6, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch  2] Train acc: 66.7 (loss: 1.013), Val acc: 68.3, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch  3] Train acc: 67.1 (loss: 1.007), Val acc: 69.2, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch  4] Train acc: 67.2 (loss: 0.992), Val acc: 68.8, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch  5] Train acc: 67.6 (loss: 0.964), Val acc: 69.9, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch  6] Train acc: 67.4 (loss: 0.970), Val acc: 69.4, Time: 0.69 seconds
+<Pretraining 18-th model>...[Epoch  7] Train acc: 67.9 (loss: 0.961), Val acc: 70.1, Time: 0.85 seconds
+<Pretraining 18-th model>...[Epoch  8] Train acc: 68.0 (loss: 0.958), Val acc: 70.1, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch  9] Train acc: 68.1 (loss: 0.935), Val acc: 71.1, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 10] Train acc: 68.7 (loss: 0.919), Val acc: 71.9, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 11] Train acc: 69.0 (loss: 0.929), Val acc: 71.7, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 12] Train acc: 68.7 (loss: 0.932), Val acc: 71.7, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 13] Train acc: 68.0 (loss: 0.931), Val acc: 71.8, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 14] Train acc: 68.2 (loss: 0.924), Val acc: 71.0, Time: 0.83 seconds
+<Pretraining 18-th model>...[Epoch 15] Train acc: 69.5 (loss: 0.897), Val acc: 72.3, Time: 0.67 seconds
+<Pretraining 18-th model>...[Epoch 16] Train acc: 69.2 (loss: 0.896), Val acc: 73.2, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 17] Train acc: 69.3 (loss: 0.898), Val acc: 73.0, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 18] Train acc: 69.4 (loss: 0.900), Val acc: 71.8, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 19] Train acc: 70.2 (loss: 0.871), Val acc: 72.1, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 20] Train acc: 69.4 (loss: 0.883), Val acc: 71.7, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 21] Train acc: 69.5 (loss: 0.893), Val acc: 72.6, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 22] Train acc: 69.3 (loss: 0.894), Val acc: 71.7, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 23] Train acc: 69.5 (loss: 0.896), Val acc: 73.3, Time: 0.73 seconds
+<Pretraining 18-th model>...[Epoch 24] Train acc: 69.9 (loss: 0.878), Val acc: 72.2, Time: 0.75 seconds
+<Pretraining 18-th model>...[Epoch 25] Train acc: 70.5 (loss: 0.871), Val acc: 72.0, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 26] Train acc: 69.7 (loss: 0.896), Val acc: 72.2, Time: 0.90 seconds
+<Pretraining 18-th model>...[Epoch 27] Train acc: 70.1 (loss: 0.883), Val acc: 73.6, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 28] Train acc: 69.6 (loss: 0.878), Val acc: 72.5, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 29] Train acc: 69.2 (loss: 0.890), Val acc: 72.8, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 30] Train acc: 70.5 (loss: 0.871), Val acc: 73.8, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 31] Train acc: 70.1 (loss: 0.875), Val acc: 72.7, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 32] Train acc: 70.3 (loss: 0.865), Val acc: 73.2, Time: 0.66 seconds
+<Pretraining 18-th model>...[Epoch 33] Train acc: 70.5 (loss: 0.854), Val acc: 73.1, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 34] Train acc: 70.0 (loss: 0.875), Val acc: 72.7, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 35] Train acc: 71.4 (loss: 0.835), Val acc: 73.2, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 36] Train acc: 69.6 (loss: 0.885), Val acc: 72.6, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 37] Train acc: 70.7 (loss: 0.861), Val acc: 73.0, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 38] Train acc: 70.9 (loss: 0.842), Val acc: 74.4, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 39] Train acc: 71.4 (loss: 0.837), Val acc: 72.5, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 40] Train acc: 72.0 (loss: 0.814), Val acc: 74.3, Time: 0.76 seconds
+<Pretraining 18-th model>...[Epoch 41] Train acc: 72.3 (loss: 0.802), Val acc: 74.7, Time: 0.72 seconds
+<Pretraining 18-th model>...[Epoch 42] Train acc: 71.9 (loss: 0.813), Val acc: 74.1, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 43] Train acc: 72.0 (loss: 0.810), Val acc: 74.6, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 44] Train acc: 73.4 (loss: 0.770), Val acc: 74.5, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 45] Train acc: 72.0 (loss: 0.805), Val acc: 74.7, Time: 0.91 seconds
+<Pretraining 18-th model>...[Epoch 46] Train acc: 72.5 (loss: 0.814), Val acc: 74.4, Time: 0.87 seconds
+<Pretraining 18-th model>...[Epoch 47] Train acc: 72.1 (loss: 0.798), Val acc: 74.1, Time: 0.91 seconds
+<Pretraining 18-th model>...[Epoch 48] Train acc: 72.1 (loss: 0.812), Val acc: 74.1, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 49] Train acc: 72.5 (loss: 0.806), Val acc: 74.5, Time: 0.70 seconds
+<Pretraining 18-th model>...[Epoch 50] Train acc: 72.2 (loss: 0.816), Val acc: 74.0, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 51] Train acc: 73.0 (loss: 0.785), Val acc: 74.3, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 52] Train acc: 72.5 (loss: 0.796), Val acc: 74.1, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 53] Train acc: 72.7 (loss: 0.798), Val acc: 73.7, Time: 0.86 seconds
+<Pretraining 18-th model>...[Epoch 54] Train acc: 73.1 (loss: 0.775), Val acc: 74.1, Time: 0.88 seconds
+<Pretraining 18-th model>...[Epoch 55] Train acc: 72.1 (loss: 0.814), Val acc: 73.9, Time: 0.89 seconds
+<Pretraining 18-th model>...[Epoch 56] Train acc: 72.0 (loss: 0.828), Val acc: 74.3, Time: 0.91 seconds
+<Pretraining 18-th model>...[Epoch 57] Train acc: 73.4 (loss: 0.795), Val acc: 73.9, Time: 0.69 seconds
+<Pretraining 18-th model>...[Epoch 58] Train acc: 73.0 (loss: 0.805), Val acc: 74.0, Time: 0.81 seconds
+<Pretraining 18-th model>...[Epoch 59] Train acc: 72.2 (loss: 0.806), Val acc: 73.9, Time: 0.89 seconds
+Model 18 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel18_trained.pth.tar
+Training model 20/20
+Model 19 initial state saved at ./../pretrained_models/dermamnist/dermamnist/premodel19_init.pth.tar
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+<Pretraining 19-th model>...[Epoch  0] Train acc: 65.9 (loss: 1.141), Val acc: 67.0, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch  1] Train acc: 67.0 (loss: 1.055), Val acc: 67.1, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch  2] Train acc: 66.8 (loss: 1.035), Val acc: 68.3, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch  3] Train acc: 67.3 (loss: 1.005), Val acc: 69.9, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch  4] Train acc: 67.5 (loss: 0.981), Val acc: 68.1, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch  5] Train acc: 67.5 (loss: 0.981), Val acc: 71.0, Time: 0.85 seconds
+<Pretraining 19-th model>...[Epoch  6] Train acc: 67.2 (loss: 0.975), Val acc: 69.6, Time: 0.68 seconds
+<Pretraining 19-th model>...[Epoch  7] Train acc: 67.8 (loss: 0.946), Val acc: 70.5, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch  8] Train acc: 67.6 (loss: 0.964), Val acc: 69.7, Time: 0.90 seconds
+<Pretraining 19-th model>...[Epoch  9] Train acc: 68.4 (loss: 0.919), Val acc: 70.4, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 10] Train acc: 68.2 (loss: 0.954), Val acc: 71.9, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 11] Train acc: 68.2 (loss: 0.948), Val acc: 72.3, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 12] Train acc: 68.1 (loss: 0.937), Val acc: 72.4, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 13] Train acc: 69.1 (loss: 0.911), Val acc: 72.9, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 14] Train acc: 69.1 (loss: 0.906), Val acc: 73.0, Time: 0.68 seconds
+<Pretraining 19-th model>...[Epoch 15] Train acc: 69.2 (loss: 0.905), Val acc: 71.4, Time: 0.83 seconds
+<Pretraining 19-th model>...[Epoch 16] Train acc: 68.6 (loss: 0.923), Val acc: 73.3, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 17] Train acc: 69.3 (loss: 0.896), Val acc: 73.0, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 18] Train acc: 69.1 (loss: 0.902), Val acc: 72.0, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 19] Train acc: 69.7 (loss: 0.876), Val acc: 73.0, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 20] Train acc: 69.5 (loss: 0.889), Val acc: 72.7, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 21] Train acc: 69.3 (loss: 0.891), Val acc: 72.8, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 22] Train acc: 69.8 (loss: 0.878), Val acc: 71.8, Time: 0.86 seconds
+<Pretraining 19-th model>...[Epoch 23] Train acc: 69.9 (loss: 0.875), Val acc: 73.1, Time: 0.68 seconds
+<Pretraining 19-th model>...[Epoch 24] Train acc: 70.5 (loss: 0.864), Val acc: 72.9, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 25] Train acc: 69.9 (loss: 0.877), Val acc: 73.5, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 26] Train acc: 69.4 (loss: 0.883), Val acc: 72.3, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 27] Train acc: 69.7 (loss: 0.875), Val acc: 73.3, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 28] Train acc: 69.8 (loss: 0.883), Val acc: 73.6, Time: 0.90 seconds
+<Pretraining 19-th model>...[Epoch 29] Train acc: 70.6 (loss: 0.866), Val acc: 72.6, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 30] Train acc: 70.5 (loss: 0.845), Val acc: 73.9, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 31] Train acc: 71.2 (loss: 0.841), Val acc: 74.4, Time: 0.69 seconds
+<Pretraining 19-th model>...[Epoch 32] Train acc: 70.4 (loss: 0.848), Val acc: 74.1, Time: 0.81 seconds
+<Pretraining 19-th model>...[Epoch 33] Train acc: 70.9 (loss: 0.842), Val acc: 73.4, Time: 0.86 seconds
+<Pretraining 19-th model>...[Epoch 34] Train acc: 71.2 (loss: 0.835), Val acc: 72.7, Time: 0.90 seconds
+<Pretraining 19-th model>...[Epoch 35] Train acc: 70.8 (loss: 0.851), Val acc: 74.1, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 36] Train acc: 70.6 (loss: 0.853), Val acc: 73.2, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 37] Train acc: 71.2 (loss: 0.831), Val acc: 73.0, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 38] Train acc: 70.6 (loss: 0.852), Val acc: 73.4, Time: 0.90 seconds
+<Pretraining 19-th model>...[Epoch 39] Train acc: 71.2 (loss: 0.836), Val acc: 73.4, Time: 0.83 seconds
+<Pretraining 19-th model>...[Epoch 40] Train acc: 71.8 (loss: 0.811), Val acc: 74.1, Time: 0.69 seconds
+<Pretraining 19-th model>...[Epoch 41] Train acc: 72.4 (loss: 0.808), Val acc: 74.5, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 42] Train acc: 71.5 (loss: 0.819), Val acc: 73.9, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 43] Train acc: 72.3 (loss: 0.804), Val acc: 74.6, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 44] Train acc: 71.9 (loss: 0.806), Val acc: 74.1, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 45] Train acc: 72.6 (loss: 0.797), Val acc: 74.8, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 46] Train acc: 73.2 (loss: 0.780), Val acc: 74.7, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 47] Train acc: 71.7 (loss: 0.801), Val acc: 74.6, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 48] Train acc: 72.4 (loss: 0.797), Val acc: 74.4, Time: 0.70 seconds
+<Pretraining 19-th model>...[Epoch 49] Train acc: 72.6 (loss: 0.784), Val acc: 74.8, Time: 0.82 seconds
+<Pretraining 19-th model>...[Epoch 50] Train acc: 72.7 (loss: 0.792), Val acc: 74.9, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 51] Train acc: 72.8 (loss: 0.784), Val acc: 74.8, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 52] Train acc: 73.4 (loss: 0.769), Val acc: 74.8, Time: 0.89 seconds
+<Pretraining 19-th model>...[Epoch 53] Train acc: 73.6 (loss: 0.762), Val acc: 74.5, Time: 0.87 seconds
+<Pretraining 19-th model>...[Epoch 54] Train acc: 72.8 (loss: 0.794), Val acc: 74.9, Time: 0.90 seconds
+<Pretraining 19-th model>...[Epoch 55] Train acc: 73.4 (loss: 0.778), Val acc: 74.9, Time: 0.90 seconds
+<Pretraining 19-th model>...[Epoch 56] Train acc: 72.4 (loss: 0.790), Val acc: 74.6, Time: 0.85 seconds
+<Pretraining 19-th model>...[Epoch 57] Train acc: 73.0 (loss: 0.786), Val acc: 74.8, Time: 0.66 seconds
+<Pretraining 19-th model>...[Epoch 58] Train acc: 72.7 (loss: 0.794), Val acc: 74.5, Time: 0.88 seconds
+<Pretraining 19-th model>...[Epoch 59] Train acc: 72.8 (loss: 0.785), Val acc: 74.3, Time: 0.88 seconds
+Model 19 trained state saved at ./../pretrained_models/dermamnist/dermamnist/premodel19_trained.pth.tar
+Pretraining done for IPC=10
+[rank0]:[W419 04:02:22.121951739 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ../results/condense/./condense/dermamnist/ipc10/adamw_lr_img_0.0010_numr_reqs4096_factor2_20260419-0402
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+==========================Rank 0 has classes [0, 1, 2, 3, 4, 5, 6]==========================
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+Factor: 2 (single)
+===================Mixed initialize condensed===================
+============RANK:0====LOCAL_RANK 0 Loaded Condensed Data==========================
+Using AdamW optimizer with learning rate: 0.001
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 67, in <module>
+[rank0]:     main_worker(args)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 27, in main_worker
+[rank0]:     condenser.condense(args,plotter,loader_real,aug,optim_img,model_init,model_interval,model_final,sampling_net,optim_sampling_net)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condenser/Condenser.py", line 212, in condense
+[rank0]:     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'
+terminate called recursively
+terminate called without an active exception
+Condensation done for IPC=10
+usage: evaluation_script.py [-h] [--debug] --config_path CONFIG_PATH
+                            [--run_mode {Condense,Evaluation,Pretrain}]
+                            [--init {random,noise,mix,load}] --load_path
+                            LOAD_PATH [--val_repeat VAL_REPEAT] --gpu GPU
+                            [-i IPC] [--tf32] [--softlabel] [--kldiv]
+                            [--temperature TEMPERATURE]
+evaluation_script.py: error: the following arguments are required: --load_path
+dermamnist IPC=10 COMPLETED
+Starting dermamnist IPC=1
+/root/miniconda3/envs/py311/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[rank0]:[W419 04:02:28.565568999 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ./../pretrained_models/dermamnist/dermamnist
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+Pretraining done for IPC=1
+[rank0]:[W419 04:02:31.836497864 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ../results/condense/./condense/dermamnist/ipc1/adamw_lr_img_0.0010_numr_reqs4096_factor2_20260419-0402
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+==========================Rank 0 has classes [0, 1, 2, 3, 4, 5, 6]==========================
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+Factor: 2 (single)
+===================Mixed initialize condensed===================
+============RANK:0====LOCAL_RANK 0 Loaded Condensed Data==========================
+Using AdamW optimizer with learning rate: 0.001
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 67, in <module>
+[rank0]:     main_worker(args)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 27, in main_worker
+[rank0]:     condenser.condense(args,plotter,loader_real,aug,optim_img,model_init,model_interval,model_final,sampling_net,optim_sampling_net)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condenser/Condenser.py", line 212, in condense
+[rank0]:     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'
+terminate called without an active exception
+terminate called recursively
+Condensation done for IPC=1
+usage: evaluation_script.py [-h] [--debug] --config_path CONFIG_PATH
+                            [--run_mode {Condense,Evaluation,Pretrain}]
+                            [--init {random,noise,mix,load}] --load_path
+                            LOAD_PATH [--val_repeat VAL_REPEAT] --gpu GPU
+                            [-i IPC] [--tf32] [--softlabel] [--kldiv]
+                            [--temperature TEMPERATURE]
+evaluation_script.py: error: the following arguments are required: --load_path
+dermamnist IPC=1 COMPLETED
+Starting dermamnist IPC=50
+/root/miniconda3/envs/py311/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[rank0]:[W419 04:02:38.054215500 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ./../pretrained_models/dermamnist/dermamnist
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+Pretraining done for IPC=50
+[rank0]:[W419 04:02:42.343590479 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ../results/condense/./condense/dermamnist/ipc50/adamw_lr_img_0.0010_numr_reqs4096_factor2_20260419-0402
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+==========================Rank 0 has classes [0, 1, 2, 3, 4, 5, 6]==========================
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+Factor: 2 (single)
+===================Mixed initialize condensed===================
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 67, in <module>
+[rank0]:     main_worker(args)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 15, in main_worker
+[rank0]:     condenser.load_condensed_data(loader_real, init_type=args.init,load_path=args.load_path)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condenser/Condenser.py", line 92, in load_condensed_data
+[rank0]:     self.data.data[
+[rank0]: RuntimeError: The expanded size of the tensor (50) must match the existing size (42) at non-singleton dimension 0.  Target sizes: [50, 3, 14, 14].  Tensor sizes: [42, 3, 14, 14]
+[rank0]:[W419 04:02:47.204502087 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+Condensation done for IPC=50
+usage: evaluation_script.py [-h] [--debug] --config_path CONFIG_PATH
+                            [--run_mode {Condense,Evaluation,Pretrain}]
+                            [--init {random,noise,mix,load}] --load_path
+                            LOAD_PATH [--val_repeat VAL_REPEAT] --gpu GPU
+                            [-i IPC] [--tf32] [--softlabel] [--kldiv]
+                            [--temperature TEMPERATURE]
+evaluation_script.py: error: the following arguments are required: --load_path
+dermamnist IPC=50 COMPLETED
+DermaMNIST ALL COMPLETED!

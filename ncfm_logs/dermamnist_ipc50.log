@@ -1,0 +1,33 @@
+/root/miniconda3/envs/py311/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4876: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  warnings.warn(  # warn only once
+[rank0]:[W419 04:02:38.054215500 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ./../pretrained_models/dermamnist/dermamnist
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+[rank0]:[W419 04:02:42.343590479 ProcessGroupNCCL.cpp:5072] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+DSA strategy:  color_crop_flip_scale_rotate
+Save dir: ../results/condense/./condense/dermamnist/ipc50/adamw_lr_img_0.0010_numr_reqs4096_factor2_20260419-0402
+TF32 is enabled
+=> creating model convnet-3, norm: instance
+==========================Rank 0 has classes [0, 1, 2, 3, 4, 5, 6]==========================
+Augmentataion Matching:  color_crop_cutout
+Augmentataion Net update:  color_crop
+Factor: 2 (single)
+===================Mixed initialize condensed===================
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 67, in <module>
+[rank0]:     main_worker(args)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condense/condense_script.py", line 15, in main_worker
+[rank0]:     condenser.load_condensed_data(loader_real, init_type=args.init,load_path=args.load_path)
+[rank0]:   File "/data/zengqiang/experiments/project_20260419_143900_medmnist_stats/NCFM/condenser/Condenser.py", line 92, in load_condensed_data
+[rank0]:     self.data.data[
+[rank0]: RuntimeError: The expanded size of the tensor (50) must match the existing size (42) at non-singleton dimension 0.  Target sizes: [50, 3, 14, 14].  Tensor sizes: [42, 3, 14, 14]
+[rank0]:[W419 04:02:47.204502087 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+usage: evaluation_script.py [-h] [--debug] --config_path CONFIG_PATH
+                            [--run_mode {Condense,Evaluation,Pretrain}]
+                            [--init {random,noise,mix,load}] --load_path
+                            LOAD_PATH [--val_repeat VAL_REPEAT] --gpu GPU
+                            [-i IPC] [--tf32] [--softlabel] [--kldiv]
+                            [--temperature TEMPERATURE]
+evaluation_script.py: error: the following arguments are required: --load_path
