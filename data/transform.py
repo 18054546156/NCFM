@@ -3,6 +3,22 @@ from data.dataset_statistics import MEANS, STDS
 from data.augment import ColorJitter, Lighting
 
 
+MEDMNIST_DATASETS = {
+    "pathmnist",
+    "chestmnist",
+    "dermamnist",
+    "octmnist",
+    "pneumoniamnist",
+    "retinamnist",
+    "breastmnist",
+    "bloodmnist",
+    "tissuemnist",
+    "organamnist",
+    "organcmnist",
+    "organsmnist",
+}
+
+
 def transform_cifar(augment=False, from_tensor=False, normalize=True):
     if not augment:
         aug = []
@@ -110,6 +126,33 @@ def transform_tiny(augment=False, from_tensor=False, normalize=True):
         normal_fn = [
             transforms.Normalize(mean=MEANS["tinyimagenet"], std=STDS["tinyimagenet"])
         ]
+    else:
+        normal_fn = []
+
+    train_transform = transforms.Compose(cast + aug + normal_fn)
+    test_transform = transforms.Compose(cast + normal_fn)
+
+    return train_transform, test_transform
+
+
+def transform_medmnist(dataset, augment=False, from_tensor=False, normalize=True):
+    # MedMNIST 官方分辨率统一是 28x28。
+    # 这里沿用 upstream 小图像的思路：
+    # - from_tensor=False: 原始样本还不是 tensor，需要 ToTensor()
+    # - from_tensor=True:  样本已经是 tensor，只做增强/Normalize
+    if not augment:
+        aug = []
+    else:
+        aug = [transforms.RandomCrop(28, padding=4)]
+        print("Dataset with basic MedMNIST augmentation")
+
+    if from_tensor:
+        cast = []
+    else:
+        cast = [transforms.ToTensor()]
+
+    if normalize:
+        normal_fn = [transforms.Normalize(mean=MEANS[dataset], std=STDS[dataset])]
     else:
         normal_fn = []
 

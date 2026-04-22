@@ -16,6 +16,7 @@ from .decode import decode
 from .subsample import subsample
 from .condense_transfom import get_train_transform
 from .compute_loss import compute_match_loss, compute_calib_loss
+from .dynamics_monitor import build_dynamics_monitor
 from data.dataloader import MultiEpochsDataLoader
 import torch.optim as optim
 from data.dataloader import AsyncLoader
@@ -144,9 +145,14 @@ class Condenser:
         return data, target
 
     def get_syndataLoader(self, args, augment=True):
+        # syn 链（严格 upstream 风格）:
+        # self.data 在 Condenser 内部始终维护为 torch.float32 tensor，范围 [0,1]。
+        # 因此 synthetic loader 这里显式传 from_tensor=True，
+        # 只做增强和 Normalize，不再重复 ToTensor。
         train_transform, _ = get_train_transform(
             args.dataset,
             augment=augment,
+            from_tensor=True,
             rrc=args.rrc,
             rrc_size=self.size[0],
             device=args.device,
@@ -212,6 +218,7 @@ class Condenser:
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             optim_img, mode="min", factor=0.5, patience=500
         )
+        dynamics_monitor = build_dynamics_monitor(args)
         gather_save_visualize(self, args)
         if args.local_rank == 0:
             pbar = tqdm(range(1, args.niter))
@@ -305,9 +312,18 @@ class Condenser:
                     )
             if (it + 1) in args.it_save:
                 gather_save_visualize(self, args, iteration=it)
+            dynamics_monitor.maybe_record(
+                step=it,
+                syn_images=self.data.detach(),
+                syn_labels=self.targets.detach(),
+                model=model_interval,
+                match_loss_total=match_loss_total,
+                calib_loss_total=calib_loss_total,
+            )
             scheduler.step(current_loss)
             if scheduler_sampling_net is not None:
                 scheduler_sampling_net.step(current_loss)
+        dynamics_monitor.save()
 
     def evaluate(self, args, syndataloader, val_loader):
         if args.rank == 0:

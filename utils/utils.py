@@ -262,7 +262,13 @@ def load_resized_data(
             "pneumoniamnist", "retinamnist", "breastmnist", "bloodmnist",
             "tissuemnist", "organamnist", "organcmnist", "organsmnist"
         ]:
-            # Import MedMNIST loader
+            # MedMNIST 按严格 upstream 风格分两条 real data 链:
+            # 1. train_dataset: train + val 合并，输出 float32 [0,1]，不给 loader 侧 Normalize
+            # 2. val_dataset:   test split，但 __getitem__ 已经执行 Normalize(mean, std)
+            #
+            # 这样可以对齐原作者 CIFAR 的约定:
+            # - real train: 只 ToTensor -> [0,1]
+            # - real val/test: ToTensor + Normalize
             from data.medmnist_dataset import load_medmnist_data
 
             train_dataset, val_dataset = load_medmnist_data(

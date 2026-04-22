@@ -32,15 +32,17 @@ STDS['imagefruit'] = [0.229, 0.224, 0.225]
 MEANS['imageyellow'] = [0.485, 0.456, 0.406]
 STDS['imageyellow'] = [0.229, 0.224, 0.225]
 
-# MedMNIST datasets - Approximate mean and std values
-MEANS['pathmnist'] = [0.7380, 0.5455, 0.6583]
-STDS['pathmnist'] = [0.1678, 0.1880, 0.1775]
+# MedMNIST datasets.
+# Common local runs use exact train+val statistics computed after ToTensor() -> [0, 1].
+# Remaining entries are kept as existing approximations until explicitly recomputed.
+MEANS['pathmnist'] = [0.740638, 0.533137, 0.705940]
+STDS['pathmnist'] = [0.123628, 0.176805, 0.124425]
 
 MEANS['chestmnist'] = [0.5096]
 STDS['chestmnist'] = [0.2751]
 
-MEANS['dermamnist'] = [0.6274, 0.5294, 0.5451]
-STDS['dermamnist'] = [0.1922, 0.2078, 0.2157]
+MEANS['dermamnist'] = [0.763445, 0.538597, 0.562011]
+STDS['dermamnist'] = [0.136320, 0.153896, 0.168832]
 
 MEANS['octmnist'] = [0.2462]
 STDS['octmnist'] = [0.1966]
@@ -54,8 +56,8 @@ STDS['retinamnist'] = [0.1608, 0.1725, 0.1804]
 MEANS['breastmnist'] = [0.5176]
 STDS['breastmnist'] = [0.2510]
 
-MEANS['bloodmnist'] = [0.6863, 0.6549, 0.6667]
-STDS['bloodmnist'] = [0.1294, 0.1412, 0.1373]
+MEANS['bloodmnist'] = [0.794354, 0.659687, 0.696210]
+STDS['bloodmnist'] = [0.215488, 0.241463, 0.117844]
 
 MEANS['tissuemnist'] = [0.5804]
 STDS['tissuemnist'] = [0.2431]

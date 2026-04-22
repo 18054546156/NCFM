@@ -70,3 +70,17 @@ condense:
   beta_for_loss: 0.5
   decode_type: 'single'
   teacher_model_epoch: 20
+
+monitoring:
+  enable_training_dynamics: true
+  log_loss_every: 100
+  log_per_class_loss_every: 500
+  log_grad_freq_every: 1000
+  log_feature_metrics_every: 2000
+  eval_during_condense_every: 2000
+  eval_during_condense_epochs: 50
+  eval_during_condense_seed: 0
+  dynamics_real_subset_per_class: 256
+  dynamics_feature_subset_per_class: 256
+  dynamics_eval_batch_size: 256
+  train_log_path: "training_dynamics.json"
