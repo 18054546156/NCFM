@@ -1,0 +1,4 @@
+M00_baseline_ncfm_guess	/data/zengqiang/experiments/NCFMproject_0603/active_code/M00_baseline_ncfm/code
+M12_local_patch_rand20_step	/data/zengqiang/experiments/NCFMproject_0603/active_code/M12_local_patch_rand20_step/code
+M16_feature_map_token_ncfd	/data/zengqiang/experiments/NCFMproject_0603/active_code/M16_feature_map_token_ncfd/code
+M19_patch_feature_token_fusion	/data/zengqiang/experiments/NCFMproject_0603/active_code/M19_patch_feature_token_fusion/code

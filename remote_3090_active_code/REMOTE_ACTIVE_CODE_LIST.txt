@@ -1,0 +1,9 @@
+M16_feature_map_token_ncfd
+M19_patch_feature_token_fusion
+M14_soft_roi_view_vits
+M00_baseline_ncfm
+M09_local_patch_v2_effective
+M14_soft_roi_view_ncfm
+M17_wavelet_ncfd
+M12_local_patch_rand20_step
+M15_discrepancy_attention_ncfm
