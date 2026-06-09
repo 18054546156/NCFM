@@ -1,0 +1,11 @@
+﻿{
+    "Snapshot":  "D:\\Project\\NCFM_Medmnist\\code_snapshots\\baseline_m12_m16_m19_20260610_022019",
+    "Bundle":  "D:\\Project\\NCFM_Medmnist\\code_snapshots\\baseline_m12_m16_m19_20260610_022019.bundle",
+    "Zip":  "D:\\Project\\NCFM_Medmnist\\code_snapshots\\baseline_m12_m16_m19_20260610_022019.zip",
+    "GitStatus":  "clean",
+    "Commit":  "fcc0ddf69bbea2cbca0a91862ec5cf74c7865308",
+    "Log":  "fcc0ddf Snapshot Baseline M12 M16 M19 code",
+    "TotalFiles":  983,
+    "HashLines":  982,
+    "BundleVerify":  "The bundle contains these 2 refs: | fcc0ddf69bbea2cbca0a91862ec5cf74c7865308 refs/heads/master | fcc0ddf69bbea2cbca0a91862ec5cf74c7865308 HEAD | The bundle records a complete history. | The bundle uses this hash algorithm: sha1 | D:/Project/NCFM_Medmnist/code_snapshots/baseline_m12_m16_m19_20260610_022019.bundle is okay"
+}

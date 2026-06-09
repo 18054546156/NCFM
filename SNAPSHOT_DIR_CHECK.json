@@ -1,0 +1,42 @@
+﻿[
+    {
+        "Path":  "local_active_methods\\M00_baseline_ncfm__05_clean_baseline_dam_no_cam_code",
+        "Exists":  true,
+        "Files":  105
+    },
+    {
+        "Path":  "local_active_methods\\M12_local_patch_rand20_step__12_clean_baseline_local_patch_rand20_step_code",
+        "Exists":  true,
+        "Files":  122
+    },
+    {
+        "Path":  "local_active_methods\\M16_feature_map_token__16_clean_baseline_feature_map_token_ncfd_code",
+        "Exists":  true,
+        "Files":  125
+    },
+    {
+        "Path":  "local_active_methods\\M19_patch_feature_token_fusion",
+        "Exists":  true,
+        "Files":  126
+    },
+    {
+        "Path":  "remote_3090_active_code\\M00_baseline_ncfm_guess",
+        "Exists":  true,
+        "Files":  124
+    },
+    {
+        "Path":  "remote_3090_active_code\\M12_local_patch_rand20_step",
+        "Exists":  true,
+        "Files":  123
+    },
+    {
+        "Path":  "remote_3090_active_code\\M16_feature_map_token_ncfd",
+        "Exists":  true,
+        "Files":  125
+    },
+    {
+        "Path":  "remote_3090_active_code\\M19_patch_feature_token_fusion",
+        "Exists":  true,
+        "Files":  127
+    }
+]
